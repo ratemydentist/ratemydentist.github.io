@@ -19,7 +19,7 @@
      - Dmitri Karzikov
  
      c. Framework used to develop the application.
-     - bootstrap ?
+     - bootstrap
      
      d. Target platform(s) that the prototype will run on.
      - online, via browser
@@ -28,8 +28,25 @@
  4. Start adding Issues to plan your development activities. 
      a. Add brief descriptions of what the part of the functionality is going to be addressed by the issue. 
      b. Assign issues to specific team members. 
+     
+     week 1
+     - html/bootstrap base for the patient side   -  Nadin and Dmitri
+     - html/bootstrap base for the partner (clinic) interface - Manisha and Eduard
+     week 2
+     - javascript for the patient side - Huseyin and may be Dmitri
+     - javascript for the partner (clinic) interface - Manisha and may be Eduard
+     week 3
+     - the style and looks - all members
+     
      c. Add labels (you can use the labels offered by GitHub or add your own).
-     d. Add milestones (please use our course schedule to specify milestones based on the dates of our meetings). 
+     d. Add milestones (please use our course schedule to specify milestones based on the dates of our meetings).
+     
+     - week 1 (2-9 APRIL)- prepare html/bootstrap base for patients' pages and partner(clinic) interface.
+     - week 2 (10-16 APRIL) - make javascript functionality, hardcode database imitation for patients' accounts and visit calendar.
+     - week 3 (17-23 APRIL) - finalise looks/style, make website look pretty.
+     - week 4 (24-30 APRIL) - test, finalise.
+     
+     
  5. Add documentation to the GitHub wiki (4-5 pages).
      a. Add a more detailed description of the prototype you are going to develop. 
      b. Add an overview of the main usage scenarios. 
