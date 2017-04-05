@@ -1,0 +1,23 @@
+body{
+  background:   grey;
+  color: white;
+   
+}
+
+#navbar>ul>a{
+  color: white;
+  font-size: 12px;
+  padding: 0;
+}
+#navbar{
+  margin-top: 1%;
+  margin-left: 6%;
+  
+}
+.navbar-inverse{
+    background-color: grey;
+    border-color: grey;
+}
+
+
+
