@@ -1,7 +1,6 @@
 body{
   background:   grey;
-  color: white;
-   
+  color: white;  
 }
 
 #navbar>ul>a{
@@ -10,14 +9,23 @@ body{
   padding: 0;
 }
 #navbar{
-  margin-top: 1%;
-  margin-left: 6%;
-  
+    margin: 1% 0 0 6%;
 }
 .navbar-inverse{
     background-color: grey;
     border-color: grey;
 }
-
-
+.logo_rmd{
+    font-family: 'Swistblnk Monthoers Bold', 'Swistblnk Monthoers Regular', 'Swistblnk Monthoers';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 38px;
+    padding-top: 5%;
+}
+.center-block {
+  text-align: center;
+}
+.dr1, .dr2, .bt_s{
+    padding: 0.5%;
+}
 
