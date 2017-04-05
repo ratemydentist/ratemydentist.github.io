@@ -1,0 +1,9 @@
+ratemydentist
+""
+Dentist999
+
+table: dentists
+dentist_name
+dentist_speciality1
+dentist_speciality2
+dentist_address
