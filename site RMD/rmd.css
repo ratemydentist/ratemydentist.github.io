@@ -26,6 +26,23 @@ body{
   text-align: center;
 }
 .dr1, .dr2, .bt_s{
-    padding: 0.5%;
+    padding: 5px;
 }
-
+#footer {
+    position: fixed; 
+    left: 0; bottom: 0; 
+    padding: 3px;
+    background: grey; 
+    color: #fff; 
+    width: 100%; 
+    font-size: 8px;
+}
+.bt_s>a{
+    color: white;
+   padding: 4px 9px;
+   border: 2px solid white; 
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 8px;
+}
