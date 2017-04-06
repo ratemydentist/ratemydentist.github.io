@@ -1,39 +1,19 @@
-    <!DOCTYPE html>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <html>
-    <head>
-    LOGIN PAGE - NO BOOTSTRAP - NO THEME - NO JAVA - NO PHP<br>
-    </head>
-    <body>
-
-    <?php
-    echo "PHP is working";
-        
-    ?>
-
-
-    <div id="main_login" style="background-color:red;position:relative;">
-        <form action="./login_check.php" method="post">
-            <?php
-                if(isset($_POST["reply"])){
-                    echo "<a style=\"color:red\">Incorrect login/password</a>";
-                }                
-            ?>
-            <input type="text" name="login_input" value="Login"><br>
-            <input type="text" name="password_input" value="Password"><br>
-            <input type="submit" name="login" value="LOGIN"><br>
-
-        </form>
-
+<?php      
+    include 'template_part_a.php';
+?>
+    <!--logo-->
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><p class="text-center logo_rmd">Login page</p></div>
     </div>
+    <!--endlogo-->
 
+    <script src="./js/js.js" ></script>
 
-    </body>
-    </html>
+    <div id="main_login" style="background-color:red;position:relative; color:black;">
+            <input type="text" id="username_input" value="Login"><br>
+            <input type="text" id="password_input" value="Password"><br>
+            <input type="button" id="login" value="LOGIN" onclick="myFunction()"><br> <!-- JS does the login check-->
+    </div>
+<?php
+     include 'template_part_b.php';
+?>
