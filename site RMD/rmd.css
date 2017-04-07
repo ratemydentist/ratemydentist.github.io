@@ -114,3 +114,10 @@ body{
 #notebook4 .page-top-border * {
  box-sizing: border-box;
 }
+
+a>h4{
+    color: white;   
+}
+.panel-body, .ser_pac{
+    color: dimgrey;
+}
