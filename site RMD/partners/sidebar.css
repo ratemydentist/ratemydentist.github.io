@@ -1,0 +1,27 @@
+/* Sidebar */
+	#sidebar-wrapper{
+		z-index: 1;
+		position: absolute;
+		Width: 0;
+		height: 100%;
+		overflow-y: hidden;
+		background: #2C3E50;
+		opacity: 0.9;
+	
+	}
+	/* Main content */
+	#page-content-wrapper{
+		width: 100%;
+		position: absolute;
+		
+	}
+	/* change the width of the sidebar to display it */
+	#wrapper.toggled #sidebar-wrapper{
+		width: 200px;
+	}
+
+	#wrapper.toggled #page-content-wrapper{
+		padding-left: 200px;
+	}
+	
+	/* code from https://www.youtube.com/watch?v=tuuLDy1dev0 */
