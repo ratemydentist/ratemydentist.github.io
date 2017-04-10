@@ -1,13 +1,25 @@
 /* Sidebar */
-	#sidebar-wrapper{
-		z-index: 1;
-		position: absolute;
-		Width: 0;
-		height: 100%;
-		overflow-y: hidden;
-		background: #2C3E50;
-		opacity: 0.9;
-	
+#sidebar-wrapper{
+	z-index: 1;
+	position: absolute;
+	width: 0;
+	height: 100%;
+	overflow-y: hidden;
+	background: #2C3E50;
+	opacity: 0.9;
+}
+
+ul {
+	list-style: none;
+}
+
+li a {
+	display: block;
+	border-bottom: 1px solid #FFFFFF;
+	padding: 5px 0px 5px 0px;
+	text-transform: uppercase;
+}
+
 	}
 	/* Main content */
 	#page-content-wrapper{
