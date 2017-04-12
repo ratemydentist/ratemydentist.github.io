@@ -5,7 +5,7 @@
 	width: 0;
 	height: 100%;
 	overflow-y: hidden;
-	background: #2C3E50;
+	background: #7D9C47;
 	opacity: 0.9;
 }
 
@@ -15,18 +15,23 @@ ul {
 
 li a {
 	display: block;
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid  #DEE8BC;
+	color:  #DEE8BC;
 	padding: 5px 0px 5px 0px;
 	text-transform: uppercase;
 }
 
-	}
-	/* Main content */
-	#page-content-wrapper{
-		width: 100%;
-		position: absolute;
-		
-	}
+li a:hover {
+	color:  #DEE8BC;
+	text-decoration: none;
+}
+
+/* Main content */
+#page-content-wrapper{
+	width: 100%;
+	position: absolute;
+}
+
 	/* change the width of the sidebar to display it */
 	#wrapper.toggled #sidebar-wrapper{
 		width: 200px;

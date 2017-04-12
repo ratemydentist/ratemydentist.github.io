@@ -70,43 +70,7 @@
   <!--end menu-->
   <div class="row">
 	  <div class="col-sm-6 col-md-3 col-lg-3">
-	  <form action="insert_dentist_profile.php" method="post">
-	  <div class="form-group">
-	      <label for="dentist-name">Dentist's name</label>
-	      <input type="text" class="form-control" name="dentist-name" id="dentist-name">
-	    </div>
-	    <div class="form-group">
-	      <label for="dentist-specialty1">Dentist specialty</label>
-	      <select class="form-control" name="dentist-specialty1" id="dentist-specialty1">
-	        <option value="General dentistry">General dentistry</option>
-       	 	<option value="Pediatric dentistry">Pediatric dentistry</option>
-  	    	<option value="Orthodontics">Orthodontics</option>
-  	    	<option value="Periodontics">Periodontics</option>
-  	    	<option value="Oral surgery">Oral surgery</option>
-  	    	<option value="Endodontics">Endodontics</option>
-  	    	<option value="Prosthodontics">Prosthodontics</option>
-  	    	<option value="Oral pathology">Oral pathology</option>
-	      </select>
-	    </div>
-	    <div class="form-group">
-	      <label for="dentist-specialty2">Additional specialty</label>
-	      <select class="form-control" name="dentist-specialty2" id="dentist-specialty2">
-	        <option value="General dentistry">General dentistry</option>
-       	 	<option value="Pediatric dentistry">Pediatric dentistry</option>
-  	    	<option value="Orthodontics">Orthodontics</option>
-  	    	<option value="Periodontics">Periodontics</option>
-  	    	<option value="Oral surgery">Oral surgery</option>
-  	    	<option value="Endodontics">Endodontics</option>
-  	    	<option value="Prosthodontics">Prosthodontics</option>
-  	    	<option value="Oral pathology">Oral pathology</option>
-	      </select>
-	    </div>
-	    <div class="form-group">
-	      <label for="dentist-address">Address</label>
-	      <textarea class="form-control" name="dentist-address" id="dentist-address" rows="3"></textarea>
-	    </div>
-	    <button type="submit" class="btn btn-primary">Submit</button>
-	  </form>
+    
 	  </div>
   </div>
     
