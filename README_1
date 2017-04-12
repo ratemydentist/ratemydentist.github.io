@@ -24,9 +24,16 @@
      d. Target platform(s) that the prototype will run on.
      - online, via browser
      
-     e. Guide to installing/running the application (this can be filled out later as your progress with developing your prototype). 
- 4. Start adding Issues to plan your development activities. 
-     a. Add brief descriptions of what the part of the functionality is going to be addressed by the issue. 
+     e. Guide to installing/running the application (this can be filled out later as your progress with developing your prototype).
+     - to use "Rate My Dentist" service, users need to have an internet connection and an up-to-date browser with JavaScript enabled.
+     - there are no other requirements, as the service runs through a webpage.
+     
+ 4. Start adding Issues to plan your development activities.
+ 
+     a. Add brief descriptions of what the part of the functionality is going to be addressed by the issue.
+     - User (=patient) side of the service - an interface for patients that would include personal user account, search service, booking service.
+     - Partner (=doctor/clinic) side of the service - an interface for clinics, where they can upload their info and synchronise visit schedules.
+     
      b. Assign issues to specific team members. 
      
      week 1
