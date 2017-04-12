@@ -16,6 +16,7 @@ body{
 .navbar-inverse{
     background-color: #8CB2E9;
     border: 0px;
+    border-radius: 0px;
 }
 
 .logo_rmd{
@@ -51,13 +52,11 @@ body{
    font-size: 20px;
    font-weight: 700;
    font-style: normal;
-   border-radius: 8px;
 }
 
 .content_r{
     color: white;
     border: 2px solid white; 
-    border-radius: 8px;
 }
 
 .notebook, .notebook .tabs, .notebook .pages, .notebook .page {
@@ -80,8 +79,8 @@ body{
 }
 
 .notebook .pages {
-    clear: both;
-    border: 1px solid gray;
+clear: both;
+border: 1px solid gray;
 }
 
 .notebook .tabs {
@@ -129,7 +128,7 @@ body{
 
 #notebook4 .tabs li,
 #notebook4 .page-top-border * {
- box-sizing: border-box;
+box-sizing: border-box;
 }
 
 a>h4{
