@@ -1,4 +1,4 @@
-<?php include("header_RMD.php"); ?>
+<?php include("template_part_a.php"); ?>
      <!--content_r-->
  <div class="container">
      <div class="content_r col-xs-12 col-sm-12 col-md-12 col-lg-12">
