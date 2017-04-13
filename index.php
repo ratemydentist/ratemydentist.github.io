@@ -1,4 +1,4 @@
-<?php include("header_RMD.php"); ?>
+<?php include("template_part_a.php"); ?>
     <!--logo-->
     <div class="container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><p class="text-center logo_rmd">Rate my Dentist</p></div>
@@ -46,4 +46,4 @@
     </div>
    <!-- end search -->
    <!--footer-->
-<?php include("footer_RMD.php"); ?>
+<?php include("template_part_b.php"); ?>
