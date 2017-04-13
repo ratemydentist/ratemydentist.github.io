@@ -17,7 +17,9 @@ function appFunction(){
   for (var i=0; i<counter.length; i++) {
     if (counter[i].type == 'radio' && counter[i].checked) {
       is_checked=true;
-      alert('you picked one.');
+      alert(counter[i].Id);
+      var number = counter[i].id;
+      window.location.href = "";
     }
    }
       if (is_checked == false) {
