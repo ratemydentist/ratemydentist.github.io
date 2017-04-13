@@ -123,4 +123,4 @@
                  <br>
    <!--end content_r-->
     <!--footer -->
-<?php include("footer_RMD.php"); ?>
+<?php include("template_part_b.php"); ?>
