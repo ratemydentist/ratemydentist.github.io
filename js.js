@@ -17,7 +17,7 @@ function appFunction(){
   for (var i=0; i<counter.length; i++) {
     if (counter[i].type == 'radio' && counter[i].checked) {
       is_checked=true;
-      alert(counter[i].Id);
+      alert(counter[i].id);
       var number = counter[i].id;
       window.location.href = "";
     }
