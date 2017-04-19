@@ -51,8 +51,8 @@
                  <p class="text-price"><span class="glyphicon glyphicon-euro" aria-hidden="true"> </span> Price</p>
                  <input type="range" min="0" max="1000" step="20" value="500">
                  <!--Doctor's rating-->
-                 <p class="text-price"><span class="glyphicon glyphicon-star" aria-hidden="true"> </span> Doctor's rating</p>
-                 <input type="range" min="1" max="5" step="1" value="3">
+                  
+                 <br><br><br>
                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bt_s">
                       <a href="#">Search</a>
                  </div>           
@@ -61,51 +61,54 @@
                  <!--Result table-->
                  <!--Result map-->
                  <div class="notebook" id="notebook4">
- <ul class="tabs">
-  <li><a href="#page1">Result table</a></li>
-  <li><a href="#page2">Result map</a></li>
-  
- </ul>
- <ul class="pages">
-  <li class="page" id="page1">  
-   <!-- Table -->
-      <div class="table-responsive">
-          <table class="table">
-            <tr>
-                <th>Doctor<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
-                <th>Clinic<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
-                <th><span class="glyphicon glyphicon-euro" aria-hidden="true"></span></th>
-                <th><span class="glyphicon glyphicon-star" aria-hidden="true"></span></th>
-            </tr>
-            <tr>
-                <td>Result table</td>
-                <td>Result table</td>
-                <td>Result table</td>
-                <td>Result table</td>
-            </tr>
-            <tr>
-                <td>Result table</td>
-                <td>Result table</td>
-                <td>Result table</td>
-                <td>Result table</td>
-            </tr>
-            <tr>
-                <td>Result table</td>
-                <td>Result table</td>
-                <td>Result table</td>
-                <td>Result table</td>
-            </tr>
-          </table>
-      </div> 
-  </li>
-  <li class="page" id="page2">
-      <!-- map -->
-   <img src="img/1.jpg" class="img-responsive" alt="Responsive image">
-  </li>
-  
- </ul>
-</div>              
-             </div> 
+                 <!-- notebook test container-->
+<!-- DMITRI XXX!!!XXX -->
+                    <div class="tabs">
+                       <div style="width:50%;margin:0 auto;color:red;margin-top: 1px;">
+                          <li onclick="switcToResults()" class="tab_1">RESULTS</li>
+                          <li onclick="switcToMap()" class="tab_1">SHOW ON MAP</li>
+                       </div>
+                    </div>  
+                    <div class="pages"id="page1">
+                    <!-- Table -->
+                      <li class="page">  
+                        <div class="table-responsive">
+                           <table class="table">
+                              <tr>
+                                 <th>Doctor<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
+                                 <th>Clinic<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
+                                 <th><span class="glyphicon glyphicon-euro" aria-hidden="true"></span></th>
+                                 <th><span class="glyphicon glyphicon-star" aria-hidden="true"></span></th>
+                              </tr>
+                              <tr>
+                                 <td>Result table</td>
+                                 <td>Result table</td>
+                                 <td>Result table</td>
+                                 <td>Result table</td>
+                              </tr>
+                              <tr>
+                                 <td>Result table</td>
+                                 <td>Result table</td>
+                                 <td>Result table</td>
+                                 <td>Result table</td>
+                              </tr>
+                              <tr>
+                                 <td>Result table</td>
+                                 <td>Result table</td>
+                                 <td>Result table</td>
+                                 <td>Result table</td>
+                              </tr>
+                           </table>
+                        </div> 
+                      </li>
+                    </div> <!-- end table -->
+                    <div class="page" id="page2">
+                    <!-- map -->
+                         <img src="img/1.jpg" class="img-responsive" alt="Responsive image">
+                    </div> <!-- end map -->
+                   
+                 </div>  <!-- end notebook container -->              
+             </div>  <!-- end search_res -->
      </div>
  </div>
    <!--end content_r-->
