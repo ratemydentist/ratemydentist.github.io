@@ -121,3 +121,30 @@ a>h4{
 .panel-body, .ser_pac{
     color: dimgrey;
 }
+.test{
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+}
+.lookgood_1{
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.3em;
+}
+#page1{
+   display: inline;
+   cursor: pointer;
+}
+#page2{
+   display: none;
+   cursor: pointer;
+}
+.tab_1{
+   cursor: pointer;
+   color: black;
+   font-weight: bold;
+   width: 50%;look
+   text-align: center;
+}
