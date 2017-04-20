@@ -4,65 +4,53 @@
      <div class="content_r col-xs-12 col-sm-12 col-md-12 col-lg-12">
              <div class="search_filt  col-xs-12 col-sm-4 col-md-4 col-lg-4">
                  <p class="text-center"><span class="glyphicon glyphicon-filter" aria-hidden="true"> </span> FILTER YOUR RESULTS</p>
-                 <!--City-->
-                 <div class="dropdown dr_city">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        City
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Tallinn</a></li>
-                        <li><a href="#">Tartu</a></li>
-                        <li><a href="#">Narva</a></li>
-                        <li><a href="#">Pärnu</a></li>
-                      </ul>
-                 </div>  
-                 <!--District of the Tallinn-->
-                 <div class="dropdown dr_d">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        District of the Tallinn
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Haabersti</a></li>
-                        <li><a href="#">Kesklinn</a></li>
-                        <li><a href="#">Kristiine</a></li>
-                        <li><a href="#">Lasnamäe</a></li>
-                        <li><a href="#">Mustamäe</a></li>
-                        <li><a href="#">Nõmme</a></li>
-                        <li><a href="#">Pirita</a></li>
-                        <li><a href="#">Põhja-Tallinn </a></li>
-                      </ul>
-                 </div> 
-                 <!--Package of services-->   
-                 <div class="dropdown dr_p">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Package of services
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Package № 1</a></li>
-                        <li><a href="#">Package № 2</a></li>
-                        <li><a href="#">Package № 3</a></li>
-                        <li><a href="#">Package № 4</a></li>
-                      </ul>
-                 </div>
-                 <!--Price-->
-                 <p class="text-price"><span class="glyphicon glyphicon-euro" aria-hidden="true"> </span> Price</p>
-                 <input type="range" min="0" max="1000" step="20" value="500">
-                 <!--Doctor's rating-->
-                  
-                 <br><br><br>
-                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bt_s">
-                      <a href="#">Search</a>
-                 </div>           
+
+                                    <form action="/search_r.php">
+                    <br><br>
+                    <select name="townSelect" class="lookgood_1">
+                        <option value="Tallinn">Tallinn</option>
+                        <option value="Tartu">Tartu</option>
+                        <option value="Narva">Narva</option>
+                        <option value="Parnu">Parnu</option>
+                     </select>
+                     <br><br>
+                     <select name="districkSelect" class="lookgood_1" style="color:black;">
+                        <option value="Haabersti">Haabersti</option>
+                        <option value="Kesklinn">Kesklinn</option>
+                        <option value="Kristiine">Kristiine</option>
+                        <option value="Lasnamae">Lasnamae</option>
+                        <option value="Mustamae">Mustamae</option>
+                        <option value="Nomme">Nomme</option>
+                        <option value="Pirita">Pirita</option>
+                        <option value="Pxhja-Tallinn">Pxhja-Tallinn</option>
+                     </select>
+                     <br><br>
+                     <select name="serviceSelect" class="lookgood_1">
+                        <option value="Diagnosis_of_teeth">Diagnosis of teeth</option>
+                        <option value="Correction_of_occlusion">Correction of occlusion</option>
+                        <option value="Dental_treatment">Dental treatment</option>
+                        <option value="Implantation_of_teeth">Implantation of teeth</option>
+                        <option value="Childrens_dentistry">Children's dentistry</option>
+                        <option value="Tooth_whitening">Tooth whitening</option>
+                        <option value="Periodontology">Periodontology</option>
+                        <option value="Prosthetic_dentistry">Prosthetic dentistry</option>
+                        <option value="Surgical_stomatology">Surgical stomatology</option>
+                        <option value="Aesthetic_dentistry">Aesthetic_dentistry</option>
+                     </select>
+                     <br><br>
+                     <input type="range" min="0" max="1000" step="20" value="500">
+                     <br><br>
+                     <input type="submit" class="lookgood_1" value="SEARCH!">
+                     <br><br><br><br>
+                  </form>
+<!-- DMITRI XXX!!!XXX -->
              </div>
+             <br>
              <div class="search_res  col-xs-12 col-sm-8 col-md-8 col-lg-8">
                  <!--Result table-->
                  <!--Result map-->
                  <div class="notebook" id="notebook4">
                  <!-- notebook test container-->
-<!-- DMITRI XXX!!!XXX -->
                     <div class="tabs">
                        <div style="width:50%;margin:0 auto;color:red;margin-top: 1px;">
                           <li onclick="switcToResults()" class="tab_1">RESULTS</li>
