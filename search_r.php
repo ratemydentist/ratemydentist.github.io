@@ -5,7 +5,7 @@
              <div class="search_filt  col-xs-12 col-sm-4 col-md-4 col-lg-4">
                  <p class="text-center"><span class="glyphicon glyphicon-filter" aria-hidden="true"> </span> FILTER YOUR RESULTS</p>
 
-                                    <form action="/search_r.php">
+                  <form action="/search_r.php">
                     <br><br>
                     <select name="townSelect" class="lookgood_1">
                         <option value="Tallinn">Tallinn</option>
@@ -38,7 +38,8 @@
                         <option value="Aesthetic_dentistry">Aesthetic_dentistry</option>
                      </select>
                      <br><br>
-                     <input type="range" min="0" max="1000" step="20" value="500">
+                     <input name="minprice" type="text" placeholder="min" style="width:30%;">
+                     <input name="maxprice" type="text" placeholder="max" style="width:30%;">
                      <br><br>
                      <input type="submit" class="lookgood_1" value="SEARCH!">
                      <br><br><br><br>
