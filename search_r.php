@@ -93,8 +93,10 @@
                     </div> <!-- end table -->
                     <div class="page" id="page2">
                     <!-- map -->
-                         <img src="img/1.jpg" class="img-responsive" alt="Responsive image">
-                    </div> <!-- end map -->
+                       <div class="img-responsive test" alt="Responsive image">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d32461.688565712957!2d24.748313590104548!3d59.43548392586756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shambakliinik!5e0!3m2!1sen!2see!4v1492711884377" width="100%" height="500vw" frameborder="0" style="border:0" allowfullscreen></iframe>
+                       </div>
+                    </div><!-- end map -->
                    
                  </div>  <!-- end notebook container -->              
              </div>  <!-- end search_res -->
