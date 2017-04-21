@@ -42,8 +42,8 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav col-lg-9 col-md-8 col-sm-8">
-              <a class="col-xs-12 col-sm-2 col-md-2 col-lg-1" href="index.html">Home</a>
-              <a class="col-xs-12 col-sm-2 col-md-2 col-lg-1" href="*.html">Full list</a>
+              <a class="col-xs-12 col-sm-2 col-md-2 col-lg-1" href="index.php">Home</a>
+              <a class="col-xs-12 col-sm-2 col-md-2 col-lg-1" href="full_list.php">Full list</a>
               <a class="col-xs-12 col-sm-2 col-md-2 col-lg-1" href="Clinicindex1.php">For partners</a>
             </ul>
             <ul class="nav navbar-nav navbar-right col-lg-3 col-md-4 col-sm-4">
