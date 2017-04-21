@@ -29,11 +29,75 @@
                                  <td>4</td>
                                  <td>5</td>
                               </tr>
+                              <tr>
+                                 <td>Doctor name</td>
+                                 <td>Clinic name</td>
+                                 <td>4</td>
+                                 <td>5</td>
+                              </tr>
+                              <tr>
+                                 <td>Doctor name</td>
+                                 <td>Clinic name</td>
+                                 <td>4</td>
+                                 <td>5</td>
+                              </tr>
+                              <tr>
+                                 <td>Doctor name</td>
+                                 <td>Clinic name</td>
+                                 <td>4</td>
+                                 <td>5</td>
+                              </tr>
+                              <tr>
+                                 <td>Doctor name</td>
+                                 <td>Clinic name</td>
+                                 <td>4</td>
+                                 <td>5</td>
+                              </tr>
+                              <tr>
+                                 <td>Doctor name</td>
+                                 <td>Clinic name</td>
+                                 <td>4</td>
+                                 <td>5</td>
+                              </tr>
+                              <tr>
+                                 <td>Doctor name</td>
+                                 <td>Clinic name</td>
+                                 <td>4</td>
+                                 <td>5</td>
+                              </tr>
+                              <tr>
+                                 <td>Doctor name</td>
+                                 <td>Clinic name</td>
+                                 <td>4</td>
+                                 <td>5</td>
+                              </tr>
+                              <tr>
+                                 <td>Doctor name</td>
+                                 <td>Clinic name</td>
+                                 <td>4</td>
+                                 <td>5</td>
+                              </tr>
+                              <tr>
+                                 <td>Doctor name</td>
+                                 <td>Clinic name</td>
+                                 <td>4</td>
+                                 <td>5</td>
+                              </tr>
+                              <tr>
+                                 <td>Doctor name</td>
+                                 <td>Clinic name</td>
+                                 <td>4</td>
+                                 <td>5</td>
+                              </tr>
+                              <tr>
+                                 <td>Doctor name</td>
+                                 <td>Clinic name</td>
+                                 <td>4</td>
+                                 <td>5</td>
+                              </tr>
                            </table>
                         </div> 
                     </div> <!-- end table -->
-     </div>
- </div>
- 
+     </div> 
    <!--footer-->
 <?php include("template_part_b.php"); ?>
