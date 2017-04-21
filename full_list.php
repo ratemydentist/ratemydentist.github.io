@@ -11,90 +11,17 @@
                                   <th><span class="glyphicon glyphicon-euro" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
                                   <th><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
                               </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>100</td>
-                                 <td>Result table</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>80</td>
-                                 <td>Result table</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td>Doctor name</td>
-                                 <td>Clinic name</td>
-                                 <td>4</td>
-                                 <td>5</td>
-                              </tr>
+<?php
+   $conn= new mysqli("localhost", "id1246705_user", "dentist", "id1246705_dentistbase");
+   $result = $conn->query("SELECT * FROM cliniclist")
+      or trigger_error($conn->error);
+   $row = $result->fetch_array(MYSQLI_BOTH);
+
+   while ($row = mysqli_fetch_assoc($result)) 
+   {
+      echo "<tr><td>",$row['doctor'],"</td><td>",$row['clinic'],"</td><td>",$row['1price'],"</td><td>",$row['rating'],"</td></tr>";
+   }
+?>
                            </table>
                         </div> 
                     </div> <!-- end table -->
