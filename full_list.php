@@ -99,5 +99,7 @@
                         </div> 
                     </div> <!-- end table -->
      </div> 
+<br>
+<br>
    <!--footer-->
 <?php include("template_part_b.php"); ?>
