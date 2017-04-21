@@ -103,5 +103,7 @@
      </div>
  </div>
    <!--end content_r-->
+<br>
+<br>
     <!--footer -->
 <?php include("template_part_b.php"); ?>
