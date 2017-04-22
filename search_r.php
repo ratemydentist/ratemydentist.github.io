@@ -1,3 +1,4 @@
+
 <?php include("template_part_a.php"); ?>
      <!--content_r-->
  <div class="container">
@@ -97,10 +98,8 @@ echo "Showing results for:  Town: $inputTown  District: $inputDistrict  Service:
 $result = $conn->query($sql)
         or trigger_error($conn->error);
 while ($row = $result->fetch_assoc()) {
-    echo "<tr><td>",$row['doctor'],"</td><td>",$row['clinic'],"</td><td>",$row['town'],"</td><td>",$row[$inputService],"</td><td>",$row['rating'],"</td></tr>";
+    echo "<tr><td><a style=\"text-decoration:none;color:black;\" href=\"".$row['doclink']."\">",$row['doctor'],"</a></td><td><a style=\"text-decoration:none;color:black;\" href=\"".$row['doclink']."\">",$row['clinic'],"</a></td><td><a style=\"text-decoration:none;color:black;\" href=\"".$row['doclink']."\">",$row['town'],"</a></td><td><a style=\"text-decoration:none;color:black;\" href=\"".$row['doclink']."\">",$row[$inputService],"</a></td><td><a style=\"text-decoration:none;color:black;\" href=\"".$row['doclink']."\">",$row['rating'],"</a></td></tr></div>";
 }
-
-
 ?>
                            </table>
                         </div> 
