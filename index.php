@@ -10,17 +10,17 @@
     <div class="row" style="color:black;">
        <div class="col-md-4"></div>
        <div class="col-md-4 text-center">
-                  <form action="/search_r.php">
-                     <select name="serviceSelect" class="lookgood_1">
-                        <option value="Diagnosis_of_teeth">Diagnosis of teeth</option>
-                        <option value="Correction_of_occlusion">Correction of occlusion</option>
-                        <option value="Dental_treatment">Dental treatment</option>
-                        <option value="Implantation_of_teeth">Implantation of teeth</option>
-                        <option value="Childrens_dentistry">Children's dentistry</option>
-                        <option value="Tooth_whitening">Tooth whitening</option>
+                  <form action="/search_r.php" method="post">
+                     <select name="serviceSelect" class="lookgood_1" style="color:black;">
+                        <option value="Diagnosis">Diagnosis</option>
+                        <option value="Correction_of_occlusion">Correction_of_occlusion</option>
+                        <option value="Treatment">Treatment</option>
+                        <option value="Implantation">Implantation</option>
+                        <option value="Childrens_dentistry">Childrens_dentistry</option>
+                        <option value="Whitening">Whitening</option>
                         <option value="Periodontology">Periodontology</option>
-                        <option value="Prosthetic_dentistry">Prosthetic dentistry</option>
-                        <option value="Surgical_stomatology">Surgical stomatology</option>
+                        <option value="Prosthetics">Prosthetics</option>
+                        <option value="Surgery">Surgery</option>
                         <option value="Aesthetic_dentistry">Aesthetic_dentistry</option>
                      </select>
                      <br><br>
@@ -28,7 +28,7 @@
                         <option value="Tallinn">Tallinn</option>
                         <option value="Tartu">Tartu</option>
                         <option value="Narva">Narva</option>
-                        <option value="Parnu">PÃÂ¤rnu</option>
+                        <option value="Parnu">Parnu</option>
                      </select>
                      <br><br>
                      <input type="submit" class="lookgood_1" value="SEARCH!">
