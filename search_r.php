@@ -4,46 +4,46 @@
      <div class="content_r col-xs-12 col-sm-12 col-md-12 col-lg-12">
              <div class="search_filt  col-xs-12 col-sm-4 col-md-4 col-lg-4">
                  <p class="text-center"><span class="glyphicon glyphicon-filter" aria-hidden="true"> </span> FILTER YOUR RESULTS</p>
-
-                  <form action="/search_r.php">
-                    <br><br>
-                    <select name="townSelect" class="lookgood_1">
+                  <form action="/search_r.php" method="post">
+                     <select name="serviceSelect" class="lookgood_1" style="color:black;">
+                        <option value="Diagnosis">Diagnosis</option>
+                        <option value="Correction_of_occlusion">Correction_of_occlusion</option>
+                        <option value="Treatment">Treatment</option>
+                        <option value="Implantation">Implantation</option>
+                        <option value="Childrens_dentistry">Childrens_dentistry</option>
+                        <option value="Whitening">Whitening</option>
+                        <option value="Periodontology">Periodontology</option>
+                        <option value="Prosthetics">Prosthetics</option>
+                        <option value="Surgery">Surgery</option>
+                        <option value="Aesthetic_dentistry">Aesthetic_dentistry</option>
+                     </select>
+                     <br><br>
+                     <select name="townSelect" class="lookgood_1" style="color:black;" id="townId" onchange="distr()">
                         <option value="Tallinn">Tallinn</option>
                         <option value="Tartu">Tartu</option>
                         <option value="Narva">Narva</option>
                         <option value="Parnu">Parnu</option>
                      </select>
                      <br><br>
-                     <select name="districkSelect" class="lookgood_1" style="color:black;">
-                        <option value="Haabersti">Haabersti</option>
-                        <option value="Kesklinn">Kesklinn</option>
-                        <option value="Kristiine">Kristiine</option>
-                        <option value="Lasnamae">Lasnamae</option>
-                        <option value="Mustamae">Mustamae</option>
-                        <option value="Nomme">Nomme</option>
-                        <option value="Pirita">Pirita</option>
-                        <option value="Pxhja-Tallinn">Pxhja-Tallinn</option>
-                     </select>
+                     <div id="subDistr">
+                        <select name="districtSelect" class="lookgood_1" style="color:black;">
+                           <option value="Haabersti">Haabersti</option>
+                           <option value="Kesklinn">Kesklinn</option>
+                           <option value="Kristiine">Kristiine</option>
+                           <option value="Lasnamae">Lasnamae</option>
+                           <option value="Mustamae">Mustamae</option>
+                           <option value="Nomme">Nomme</option>
+                           <option value="Pirita">Pirita</option>
+                           <option value="Pxhja-Tallinn">Pxhja-Tallinn</option>
+                        </select>
+                     </div>
                      <br><br>
-                     <select name="serviceSelect" class="lookgood_1">
-                        <option value="Diagnosis_of_teeth">Diagnosis of teeth</option>
-                        <option value="Correction_of_occlusion">Correction of occlusion</option>
-                        <option value="Dental_treatment">Dental treatment</option>
-                        <option value="Implantation_of_teeth">Implantation of teeth</option>
-                        <option value="Childrens_dentistry">Children's dentistry</option>
-                        <option value="Tooth_whitening">Tooth whitening</option>
-                        <option value="Periodontology">Periodontology</option>
-                        <option value="Prosthetic_dentistry">Prosthetic dentistry</option>
-                        <option value="Surgical_stomatology">Surgical stomatology</option>
-                        <option value="Aesthetic_dentistry">Aesthetic_dentistry</option>
-                     </select>
-                     <br><br>
-                     <input name="minprice" type="text" placeholder="min" style="width:30%;">
-                     <input name="maxprice" type="text" placeholder="max" style="width:30%;">
-                     <br><br>
-                     <input type="submit" class="lookgood_1" value="SEARCH!">
+                     <input name="minprice" type="text" placeholder="min" style="width:30%;color:black;">
+                     <input name="maxprice" type="text" placeholder="max" style="width:30%;color:black;">
                      <br><br><br><br>
+                     <input type="submit" class="lookgood_1" value="SEARCH!" style="color:black;">
                   </form>
+
 <!-- DMITRI XXX!!!XXX -->
              </div>
              <br>
@@ -69,24 +69,39 @@
                                  <th><span class="glyphicon glyphicon-euro" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
                                  <th><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
                               </tr>
-                              <tr>
-                                 <td>Result table</td>
-                                 <td>Result table</td>
-                                 <td>Result table</td>
-                                 <td>Result table</td>
-                              </tr>
-                              <tr>
-                                 <td>Result table</td>
-                                 <td>Result table</td>
-                                 <td>Result table</td>
-                                 <td>Result table</td>
-                              </tr>
-                              <tr>
-                                 <td>Result table</td>
-                                 <td>Result table</td>
-                                 <td>Result table</td>
-                                 <td>Result table</td>
-                              </tr>
+
+<!-- DMITRI XXX!!!XXX-->
+
+<?php
+$town_req = "";
+$service_req = "";
+$district_req = "";
+$inputService = "'Diagnosis of teeth'";
+$inputDistrict = "All";
+
+if (isset($_POST["townSelect"]) && !empty($_POST["townSelect"])){
+   $inputTown = $_POST["townSelect"];
+   $town_req = "town='".$inputTown."'";
+}
+if (isset($_POST["serviceSelect"]) && !empty($_POST["serviceSelect"])){
+   $inputService = $_POST["serviceSelect"];
+   $service_req = "and ".$inputService."<>'999'";
+}
+if (isset($_POST["districtSelect"]) && !empty($_POST["districtSelect"])){
+   $inputDistrict = $_POST["districtSelect"];
+   $district_req = "and district='".$inputDistrict."'";
+}
+$conn= new mysqli("localhost", "id1246705_user", "dentist", "id1246705_dentistbase");
+$sql = "SELECT * FROM cliniclist WHERE $town_req $service_req $district_req";
+echo "Showing results for:  Town: $inputTown  District: $inputDistrict  Service: $inputService";
+$result = $conn->query($sql)
+        or trigger_error($conn->error);
+while ($row = $result->fetch_assoc()) {
+    echo "<tr><td>",$row['doctor'],"</td><td>",$row['clinic'],"</td><td>",$row['town'],"</td><td>",$row[$inputService],"</td><td>",$row['rating'],"</td></tr>";
+}
+
+
+?>
                            </table>
                         </div> 
                       </li>
