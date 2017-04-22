@@ -26,3 +26,31 @@ function appFunction(){
       alert('You did not choose any time.');
     }
 }
+
+function switcToResults(){
+   document.getElementById("page1").style.display = "inline";
+   document.getElementById("page2").style.display = "none";
+}
+function switcToMap(){
+   document.getElementById("page1").style.display = "none";
+   document.getElementById("page2").style.display = "inline";
+}
+
+function distr() {
+    var x = document.getElementById("townId").value;
+    if(x=="Tallinn"){
+       document.getElementById("subDistr").innerHTML =                      
+                        '<select name="districtSelect" class="lookgood_1" style="color:black;">'+
+                        '<option value="Haabersti">Haabersti</option>'+
+                        '<option value="Kesklinn">Kesklinn</option>'+
+                        '<option value="Kristiine">Kristiine</option>'+
+                        '<option value="Lasnamae">Lasnamae</option>'+
+                        '<option value="Mustamae">Mustamae</option>'+
+                        '<option value="Nomme">Nomme</option>'+
+                        '<option value="Pirita">Pirita</option>'+
+                        '<option value="Pxhja-Tallinn">Pxhja-Tallinn</option>'+
+                        '</select>';
+   } else {
+      document.getElementById("subDistr").innerHTML ="";
+   }
+}
