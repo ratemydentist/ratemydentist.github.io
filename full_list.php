@@ -9,18 +9,22 @@
                                  <th>Doctor<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
                                  <th>Clinic<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
                                   <th><span class="glyphicon glyphicon-euro" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
+                                  <th>Town</th>
                                   <th><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
                               </tr>
-<?php
-   $conn= new mysqli("localhost", "id1246705_user", "dentist", "id1246705_dentistbase");
-   $result = $conn->query("SELECT * FROM cliniclist")
-      or trigger_error($conn->error);
-   $row = $result->fetch_array(MYSQLI_BOTH);
 
-   while ($row = mysqli_fetch_assoc($result)) 
-   {
-      echo "<tr><td>",$row['doctor'],"</td><td>",$row['clinic'],"</td><td>",$row['1price'],"</td><td>",$row['rating'],"</td></tr>";
-   }
+<?php
+
+
+$conn= new mysqli("localhost", "id1246705_user", "dentist", "id1246705_dentistbase");
+$result = $conn->query("SELECT * FROM cliniclist")
+        or trigger_error($conn->error);
+$row = $result->fetch_array(MYSQLI_BOTH);
+
+while ($row = mysqli_fetch_assoc($result)) 
+{
+   echo "<tr><td>",$row['doctor'],"</td><td>",$row['clinic'],"</td><td>",$row['Diagnosis'],"</td><td>",$row['town'],"</td><td>",$row['rating'],"</td></tr>";
+}
 ?>
                            </table>
                         </div> 
