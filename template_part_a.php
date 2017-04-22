@@ -12,6 +12,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js.js"></script>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
