@@ -60,10 +60,11 @@
                           </table>
                       </div> 
                  </div>
-                 <!-- book -->
-                 <div class=" bt_s">
-                        <a href="search_r.html">Book</a>
-                 </div>  
+                 <!-- book 
+                 <div class=" ">
+                        <a class="bt_ss" href="search_r.html"></a>
+                 </div> -->
+                 <input type="submit" class="lookgood_1 bt_ss" value="BOOK"> 
                  <!-- Service packages -->
                  <div class="panel panel-default ">
                       <!-- Default panel contents Service packages -->

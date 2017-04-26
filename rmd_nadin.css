@@ -1,11 +1,19 @@
+/*@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v5/yrzXiAvgeQQdopyG8QSg8Q.woff) format('woff');
+}*/
+
 body{
   background:   grey;
   color: white;  
+  font-family: 'PT Sans', sans-serif;
 }
 
 #navbar>ul>a{
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0;
 }
 #navbar{
@@ -127,11 +135,12 @@ a>h4{
   border-width: 1px;
 }
 .lookgood_1{
-    padding: 6px 10px;
+    padding: 3px 6px;
+    margin: 5px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.3em;
+    border: 1px solid darkslateblue;
+    border-radius: 4px;
+    font-size: 1.11em;
 }
 #page1{
    display: inline;
@@ -143,8 +152,29 @@ a>h4{
 }
 .tab_1{
    cursor: pointer;
-   color: black;
+   color: darkslateblue;
    font-weight: bold;
    width: 50%;
    text-align: center;
+}
+.bt_ss{
+    background-color: darkslateblue;
+    color: cornsilk;
+    padding: 3px 12px;
+    margin: 40px 5px 60px 5px;
+}
+.price{
+    width:30%;
+    color:black;
+    margin: 5px;
+    padding: 3px 6px;
+    border: 1px solid darkslateblue;
+    border-radius: 3px;
+}
+.text_filt{
+    margin: 30px 5px;
+}
+.text_tabl{
+    text-decoration:none;
+    color:cornsilk;
 }

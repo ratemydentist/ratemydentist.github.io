@@ -8,10 +8,10 @@
     
     <br><br><br>
     <div class="row" style="color:black;">
-       <div class="col-md-4"></div>
-       <div class="col-md-4 text-center">
+       
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center search_p">
                   <form action="/search_r.php" method="post">
-                     <select name="serviceSelect" class="lookgood_1" style="color:black;">
+                     <select name="serviceSelect" class="lookgood_1 " style="color:black;">
                         <option value="Diagnosis">Diagnosis</option>
                         <option value="Correction_of_occlusion">Correction_of_occlusion</option>
                         <option value="Treatment">Treatment</option>
@@ -23,18 +23,18 @@
                         <option value="Surgery">Surgery</option>
                         <option value="Aesthetic_dentistry">Aesthetic_dentistry</option>
                      </select>
-                     <br><br>
+                     
                      <select name="townSelect" class="lookgood_1">
                         <option value="Tallinn">Tallinn</option>
                         <option value="Tartu">Tartu</option>
                         <option value="Narva">Narva</option>
                         <option value="Parnu">Parnu</option>
                      </select>
-                     <br><br>
-                     <input type="submit" class="lookgood_1" value="SEARCH!">
+                     
+                     <input type="submit" class="lookgood_1 bt_ss" value="SEARCH">
                   </form>
        </div>
-       <div class="col-md-4"></div>
+       
     </div>
      
    <!-- end search -->
