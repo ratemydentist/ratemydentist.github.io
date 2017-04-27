@@ -1,0 +1,108 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.6
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Apr 27, 2017 at 05:29 AM
+-- Server version: 10.1.20-MariaDB
+-- PHP Version: 7.0.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `id1246705_dentistbase`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cliniclist`
+--
+
+CREATE TABLE `cliniclist` (
+  `id` int(11) NOT NULL,
+  `clinic` text COLLATE utf8_unicode_ci NOT NULL,
+  `town` text COLLATE utf8_unicode_ci NOT NULL,
+  `district` text COLLATE utf8_unicode_ci NOT NULL,
+  `address` text COLLATE utf8_unicode_ci NOT NULL,
+  `doctor` text COLLATE utf8_unicode_ci NOT NULL,
+  `rating` int(11) NOT NULL,
+  `Diagnosis` int(11) NOT NULL,
+  `Correction_of_occlusion` int(11) NOT NULL,
+  `Treatment` int(11) NOT NULL,
+  `Implantation` int(11) NOT NULL,
+  `Childrens_dentistry` int(11) NOT NULL,
+  `Whitening` int(11) NOT NULL,
+  `Periodontology` int(11) NOT NULL,
+  `Prosthetics` int(11) NOT NULL,
+  `Surgery` int(11) NOT NULL,
+  `Aesthetic_dentistry` int(11) NOT NULL,
+  `doclink` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `cliniclist`
+--
+
+INSERT INTO `cliniclist` (`id`, `clinic`, `town`, `district`, `address`, `doctor`, `rating`, `Diagnosis`, `Correction_of_occlusion`, `Treatment`, `Implantation`, `Childrens_dentistry`, `Whitening`, `Periodontology`, `Prosthetics`, `Surgery`, `Aesthetic_dentistry`, `doclink`) VALUES
+(1, 'First Choice', 'Tallinn', 'Mustamae', 'Karu 17', 'Ksenia Ovchinnikova', 2, 20, 30, 40, 50, 40, 50, 50, 150, 500, 500, 'doctor.php?doctor=Ksenia_Ovchinnikova'),
+(2, 'Fit Tonic', 'Uljaste', 'Lääne-Virumaa', 'Männi 16', 'Sanni K Rantanen', 1, 40, 50, 50, 60, 40, 100, 200, 500, 600, 700, ''),
+(3, 'CompuAdd', 'Puka', 'Valgamaa', 'Kooli 98', 'Aliisa E Raila', 5, 15, 20, 30, 40, 20, 50, 100, 150, 300, 350, ''),
+(4, 'Kleinhans', 'Loosu', 'Võrumaa', 'Jõe 16', 'Sari P Isokoski', 2, 10, 15, 20, 25, 20, 50, 60, 200, 300, 500, ''),
+(5, 'Intelli Wealth Group', 'Saueaugu', 'Järvamaa', 'Kuuse 20', 'Reija U Korjus', 4, 20, 20, 20, 50, 15, 50, 100, 150, 250, 350, ''),
+(6, 'Hit or Miss', 'Soemõisa', 'Võrumaa', 'Ööbiku 4', 'Kati O Ryynänen', 4, 10, 10, 25, 25, 20, 45, 100, 250, 350, 450, ''),
+(7, 'The Great Teeth Stores', 'Ääsmäe', 'Harjumaa', 'Pääsukese 39', 'Raino L Tuomisto', 5, 10, 15, 20, 55, 25, 75, 100, 250, 300, 300, ''),
+(8, 'Acuserv', 'Karula', 'Viljandimaa', 'Kuuse 56', 'Suoma A Uusipaikka', 2, 15, 20, 20, 35, 20, 50, 150, 300, 350, 500, ''),
+(9, 'A.J. August', 'Himmiste', 'Põlvamaa', 'Õli 24', 'Vilho T Savolainen', 1, 25, 35, 45, 50, 25, 60, 150, 300, 375, 550, ''),
+(10, 'TheBottomHalf', 'Tiduvere', 'Raplamaa', 'Madara 71', 'Sanni O Valle', 5, 15, 20, 25, 45, 20, 55, 100, 250, 350, 500, ''),
+(11, 'Dental Beauty', 'Tallinn', 'Kristiine', 'Karu 17', 'Ksenia Ovchinnikova', 3, 30, 30, 50, 50, 30, 40, 100, 100, 100, 250, ''),
+(12, 'Olympic', 'Kuuda', 'Võrumaa', 'Paju 60', 'Kati V Mäntylä', 2, 25, 30, 35, 45, 20, 75, 250, 350, 450, 600, ''),
+(13, 'Williams Bros.', 'Pori', 'Valgamaa', 'Rookopli 9', 'Terhi M Lahtela', 3, 10, 15, 20, 35, 10, 60, 75, 150, 300, 500, ''),
+(14, 'Avenue', 'Leigri', 'Hiiumaa', 'Merineitsi põik 77', 'Eero T Wuori', 2, 5, 10, 15, 20, 5, 35, 75, 150, 170, 240, ''),
+(15, 'Goods', 'Narva-Jõesuu', 'Ida-Virumaa', 'Vabaduse 43', 'Elina M Tuomisto', 4, 15, 20, 20, 30, 10, 50, 70, 150, 250, 650, ''),
+(16, 'Susie', 'Rootsi', 'Raplamaa', 'Kangru 11', 'Olli-Pekka R Manninen', 5, 10, 15, 20, 30, 10, 55, 85, 190, 275, 365, ''),
+(17, 'H. J. Wilson & Company', 'Mäeküla', 'Viljandimaa', 'Kuusiku 22', 'Lyyli A Kasvio', 3, 20, 10, 15, 25, 30, 75, 150, 250, 350, 430, ''),
+(18, 'Answers', 'Ruusmäe', 'Võrumaa', 'Tehnika 49', 'Veli-Matti T Palander', 3, 10, 15, 20, 30, 10, 75, 85, 95, 165, 430, ''),
+(19, 'Super Shops', 'Singa', 'Võrumaa', 'Piibelehe 46', 'Pirkka E Ahola', 2, 10, 25, 20, 35, 10, 75, 150, 250, 375, 550, ''),
+(20, 'Erb Lumber', 'Järveküla', 'Saaremaa', 'Vene 5', 'Eija S Noronen', 1, 20, 25, 50, 55, 25, 100, 175, 300, 750, 1000, ''),
+(21, 'Source Club', 'Keila', 'Harjumaa', 'Sireli 2', 'Arsi L Matinsalo', 5, 20, 25, 25, 30, 10, 50, 60, 130, 175, 250, ''),
+(22, 'Nets Services', 'Tallinn', 'Harjumaa', 'Suur-Laagri 48', 'Helvi E Haataja', 2, 10, 50, 50, 50, 10, 55, 70, 120, 240, 360, ''),
+(23, 'Almacs', 'Narva', 'Ida-Virumaa', 'Vabaduse 1', 'Harry M Nieminen', 5, 10, 15, 20, 25, 10, 50, 70, 95, 150, 250, ''),
+(24, 'Purity', 'Tallinn', 'Harjumaa', 'Viru 57', 'Mattiesko P Loiri', 2, 5, 10, 20, 20, 5, 50, 65, 100, 175, 350, ''),
+(25, 'Mr. Good Buys', 'Aruküla', 'Hiiumaa', 'Jõe põik 9', 'Kaarle M Rauramo', 1, 5, 15, 20, 25, 5, 75, 150, 350, 700, 1250, ''),
+(26, 'L', 'Metsaääre', 'Saaremaa', 'Vambola 78', 'Oili P Hietanen', 2, 15, 20, 25, 30, 5, 100, 150, 200, 250, 300, ''),
+(27, 'Dee', 'Pärivere', 'Pärnumaa', 'Emajõe 63', 'Niklas T Muukkonen', 4, 25, 30, 35, 40, 20, 100, 150, 200, 250, 300, ''),
+(28, 'Matrix Services', 'Sviby', 'Läänemaa', 'Põllu 97', 'Jouko M Jäntti', 5, 15, 20, 20, 20, 10, 40, 70, 125, 200, 340, ''),
+(29, 'Pieces', 'Saue', 'Harjumaa', 'Pagari 40', 'Jonna A Hahli', 1, 10, 15, 20, 25, 5, 120, 360, 400, 500, 600, ''),
+(30, 'Asian Plan', 'Linnuse', 'Läänemaa', 'Juurdepääsu 76', 'Amanda J Waltari', 4, 10, 15, 15, 25, 5, 25, 60, 150, 175, 300, '');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `cliniclist`
+--
+ALTER TABLE `cliniclist`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `cliniclist`
+--
+ALTER TABLE `cliniclist`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
