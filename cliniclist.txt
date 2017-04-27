@@ -51,7 +51,8 @@ CREATE TABLE `cliniclist` (
 -- Dumping data for table `cliniclist`
 --
 
-INSERT INTO `cliniclist` (`id`, `clinic`, `town`, `district`, `address`, `doctor`, `rating`, `Diagnosis`, `Correction_of_occlusion`, `Treatment`, `Implantation`, `Childrens_dentistry`, `Whitening`, `Periodontology`, `Prosthetics`, `Surgery`, `Aesthetic_dentistry`, `doclink`) VALUES
+INSERT INTO `cliniclist` (`id`, `clinic`, `town`, `district`, `address`, `doctor`, `rating`, `Diagnosis`, `Correction_of_occlusion`, `Treatment`, `Implantation`, `Childrens_dentistry`, `Whitening`, `Periodontology`, `Prosthetics`, `Surgery`, `Aesthetic_dentistry`, `doclink`)
+VALUES
 (1, 'First Choice', 'Tallinn', 'Mustamae', 'Karu 17', 'Ksenia Ovchinnikova', 2, 20, 30, 40, 50, 40, 50, 50, 150, 500, 500, 'doctor.php?doctor=Ksenia_Ovchinnikova'),
 (2, 'Fit Tonic', 'Uljaste', 'Lääne-Virumaa', 'Männi 16', 'Sanni K Rantanen', 1, 40, 50, 50, 60, 40, 100, 200, 500, 600, 700, ''),
 (3, 'CompuAdd', 'Puka', 'Valgamaa', 'Kooli 98', 'Aliisa E Raila', 5, 15, 20, 30, 40, 20, 50, 100, 150, 300, 350, ''),
