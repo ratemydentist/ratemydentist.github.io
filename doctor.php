@@ -12,7 +12,13 @@
           
           <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 ">
            <!--name doctor-->
-            <a href="#"><h4 class="">Ksenia Ovchinnikova</h4></a>
+<?php
+   $doc = "NO DOCTOR SELECTED !";
+   if (isset($_GET["doctor"]) && !empty($_GET["doctor"])){
+      $doc = $_GET["doctor"];
+   }
+?>
+            <a href="#"><h4 class=""><? php echo $doc; ?></h4></a>
             <!--Clinic-->
                  <div class="dropdown dr_clinic">
                       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -32,6 +38,7 @@
                       <div class="panel-heading"><span class="glyphicon glyphicon-calendar" aria-hidden="true"> </span> Calendar</div>
                                                    <!-- Table -->
                       <div class="table-responsive">
+                        <form action="/book.php" method="post" id="bookform"> 
                           <table class="table ser_pac">
                             <tr>
                                Fri
@@ -47,24 +54,123 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>choose</td>
-                                <td>choose</td>
-                                <td>-</td>
+                                <td><input type="radio" value="150800" name="datetime">8:00</td>
+                                <td><input type="radio" value="160800" name="datetime">8:00</td>
+                                <td><input type="radio" value="170800" name="datetime">8:00</td>
+                                <td><input type="radio" value="180800" name="datetime">8:00</td>
+                                <td><input type="radio" value="190800" name="datetime">8:00</td>
+                                <td><input type="radio" value="200800" name="datetime">8:00</td>
+                                <td><input type="radio" value="210800" name="datetime">8:00</td>
                                 <td></td>
                             </tr>
-                            
+                            <tr>
+                                <td></td>
+                                <td><input type="radio" value="150900" name="datetime">9:00</td>
+                                <td><input type="radio" value="160900" name="datetime">9:00</td>
+                                <td><input type="radio" value="170900" name="datetime">9:00</td>
+                                <td><input type="radio" value="180900" name="datetime">9:00</td>
+                                <td><input type="radio" value="190900" name="datetime">9:00</td>
+                                <td><input type="radio" value="200900" name="datetime">9:00</td>
+                                <td><input type="radio" value="210900" name="datetime">9:00</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="radio" value="151000" name="datetime">10:00</td>
+                                <td><input type="radio" value="161000" name="datetime">10:00</td>
+                                <td><input type="radio" value="171000" name="datetime">10:00</td>
+                                <td><input type="radio" value="181000" name="datetime">10:00</td>
+                                <td><input type="radio" value="191000" name="datetime">10:00</td>
+                                <td><input type="radio" value="201000" name="datetime">10:00</td>
+                                <td><input type="radio" value="211000" name="datetime">10:00</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="radio" value="151100" name="datetime">11:00</td>
+                                <td><input type="radio" value="161100" name="datetime">11:00</td>
+                                <td><input type="radio" value="171100" name="datetime">11:00</td>
+                                <td><input type="radio" value="181100" name="datetime">11:00</td>
+                                <td><input type="radio" value="191100" name="datetime">11:00</td>
+                                <td><input type="radio" value="201100" name="datetime">11:00</td>
+                                <td><input type="radio" value="211100" name="datetime">11:00</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="radio" value="151200" name="datetime">12:00</td>
+                                <td><input type="radio" value="161200" name="datetime">12:00</td>
+                                <td><input type="radio" value="171200" name="datetime">12:00</td>
+                                <td><input type="radio" value="181200" name="datetime">12:00</td>
+                                <td><input type="radio" value="191200" name="datetime">12:00</td>
+                                <td><input type="radio" value="201200" name="datetime">12:00</td>
+                                <td><input type="radio" value="211200" name="datetime">12:00</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="radio" value="151300" name="datetime">13:00</td>
+                                <td><input type="radio" value="161300" name="datetime">13:00</td>
+                                <td><input type="radio" value="171300" name="datetime">13:00</td>
+                                <td><input type="radio" value="181300" name="datetime">13:00</td>
+                                <td><input type="radio" value="191300" name="datetime">13:00</td>
+                                <td><input type="radio" value="201300" name="datetime">13:00</td>
+                                <td><input type="radio" value="211300" name="datetime">13:00</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="radio" value="151400" name="datetime">14:00</td>
+                                <td><input type="radio" value="161400" name="datetime">14:00</td>
+                                <td><input type="radio" value="171400" name="datetime">14:00</td>
+                                <td><input type="radio" value="181400" name="datetime">14:00</td>
+                                <td><input type="radio" value="191400" name="datetime">14:00</td>
+                                <td><input type="radio" value="201400" name="datetime">14:00</td>
+                                <td><input type="radio" value="211400" name="datetime">14:00</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="radio" value="151500" name="datetime">15:00</td>
+                                <td><input type="radio" value="161500" name="datetime">15:00</td>
+                                <td><input type="radio" value="171500" name="datetime">15:00</td>
+                                <td><input type="radio" value="181500" name="datetime">15:00</td>
+                                <td><input type="radio" value="191500" name="datetime">15:00</td>
+                                <td><input type="radio" value="201500" name="datetime">15:00</td>
+                                <td><input type="radio" value="211500" name="datetime">15:00</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="radio" value="151600" name="datetime">16:00</td>
+                                <td><input type="radio" value="161600" name="datetime">16:00</td>
+                                <td><input type="radio" value="171600" name="datetime">16:00</td>
+                                <td><input type="radio" value="181600" name="datetime">16:00</td>
+                                <td><input type="radio" value="191600" name="datetime">16:00</td>
+                                <td><input type="radio" value="201600" name="datetime">16:00</td>
+                                <td><input type="radio" value="211600" name="datetime">16:00</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="radio" value="151700" name="datetime">17:00</td>
+                                <td><input type="radio" value="161700" name="datetime">17:00</td>
+                                <td><input type="radio" value="171700" name="datetime">17:00</td>
+                                <td><input type="radio" value="181700" name="datetime">17:00</td>
+                                <td><input type="radio" value="191700" name="datetime">17:00</td>
+                                <td><input type="radio" value="201700" name="datetime">17:00</td>
+                                <td><input type="radio" value="211700" name="datetime">17:00</td>
+                                <td></td>
+                            </tr>
+
                           </table>
+                        </form>   
                       </div> 
                  </div>
-                 <!-- book 
-                 <div class=" ">
-                        <a class="bt_ss" href="search_r.html"></a>
-                 </div> -->
-                 <input type="submit" class="lookgood_1 bt_ss" value="BOOK"> 
+                 <!-- book -->
+                 <div class=" bt_s">
+                        <input type="submit" value="BOOK!" form="bookform">
+                 </div>  
                  <!-- Service packages -->
                  <div class="panel panel-default ">
                       <!-- Default panel contents Service packages -->
@@ -78,17 +184,17 @@
                                 <th><span class="glyphicon glyphicon-euro" aria-hidden="true"></span></th>
                             </tr>
                             <tr>
-                                <td>Package №1</td>
+                                <td>Package Ã¢ÂÂ1</td>
                                 <td>Result table</td>
                                 <td>Result table</td>
                             </tr>
                             <tr>
-                                <td>Package №2</td>
+                                <td>Package Ã¢ÂÂ2</td>
                                 <td>Result table</td>
                                 <td>Result table</td>
                             </tr>
                             <tr>
-                                <td>Package №3</td>
+                                <td>Package Ã¢ÂÂ3</td>
                                 <td>Result table</td>
                                 <td>Result table</td>
                             </tr>
