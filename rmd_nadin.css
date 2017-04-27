@@ -1,9 +1,15 @@
-/*@font-face {
-    font-family: 'PT Sans';
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@font-face {
+    font-family: Swistblnk Monthoers;
+    src: url('fonts/Monthoers.eot');
+    src: url('fonts/Monthoers.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Monthoers.woff2') format('woff2'),
+         url('fonts/Monthoers.woff') format('woff'),
+         url('fonts/Monthoers.ttf') format('truetype'),
+         url('fonts/Monthoers.svg#SegoeScript') format('svg');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: local('PT Sans'), local('PTSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v5/yrzXiAvgeQQdopyG8QSg8Q.woff) format('woff');
-}*/
+}
 
 body{
   background:   grey;
@@ -24,7 +30,7 @@ body{
     border-color: grey;
 }
 .logo_rmd{
-    font-family: 'Swistblnk Monthoers Bold', 'Swistblnk Monthoers Regular', 'Swistblnk Monthoers';
+    font-family: Swistblnk Monthoers;
     font-weight: 500;
     font-style: normal;
     font-size: 38px;
