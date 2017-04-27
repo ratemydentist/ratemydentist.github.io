@@ -12,21 +12,24 @@
 }
 
 body{
-  background:   grey;
+  background:  url(/img/fon.png), grey;
   color: white;  
   font-family: 'PT Sans', sans-serif;
+}
+.navbar{
+    background: grey;
 }
 
 #navbar>ul>a{
   color: white;
-  font-size: 13px;
+  font-size: 13.5px;
   padding: 0;
 }
 #navbar{
     margin: 1% 0 0 6%;
 }
 .navbar-inverse{
-    background-color: grey;
+    background-color: 0x808080;
     border-color: grey;
 }
 .logo_rmd{
@@ -34,7 +37,6 @@ body{
     font-weight: 500;
     font-style: normal;
     font-size: 38px;
-    padding-top: 5%;
 }
 .center-block {
   text-align: center;
@@ -184,4 +186,12 @@ a>h4{
 .text_tabl{
     text-decoration:none;
     color:cornsilk;
+}
+.search_p{
+    color:black;
+    margin-top: 15px;
+}
+.logo_img{
+    text-align: center;
+    margin-top: 15%;
 }

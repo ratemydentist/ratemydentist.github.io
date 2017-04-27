@@ -1,17 +1,22 @@
 <?php include("template_part_a.php"); ?>
     <!--logo-->
     <div class="container">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><p class="text-center logo_rmd">Rate my Dentist</p></div>
+       <div class="row">
+           <div class="col-xs-4"></div>
+        <div class="col-xs-4"><p class="text-center logo_img"><img src="img/dentist.png" alt="photo logo"></p></div>
+           <div class="col-xs-4"></div>
+        <div class="col-xs-12"><p class="text-center logo_rmd">Rate my Dentist</p></div>
+        </div>
     </div>
     <!--endlogo-->
     <!-- search -->
     
-    <br><br><br>
-    <div class="row" style="color:black;">
+    
+    <div class="row">
        
-       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center search_p">
+       <div class="col-xs-12  text-center search_p">
                   <form action="/search_r.php" method="post">
-                     <select name="serviceSelect" class="lookgood_1 " style="color:black;">
+                     <select name="serviceSelect" class="lookgood_1 ">
                         <option value="Diagnosis">Diagnosis</option>
                         <option value="Correction_of_occlusion">Correction_of_occlusion</option>
                         <option value="Treatment">Treatment</option>
@@ -34,6 +39,7 @@
                      <input type="submit" class="lookgood_1 bt_ss" value="SEARCH">
                   </form>
        </div>
+       
        
     </div>
      
