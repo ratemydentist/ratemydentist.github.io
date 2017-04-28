@@ -195,3 +195,16 @@ a>h4{
     text-align: center;
     margin-top: 15%;
 }
+
+.navbar-inverse .navbar-toggle {
+    border-color: white;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    background-color: darkslateblue;
+}
+.navbar-inverse .navbar-collapse{
+    border-top-color: white;
+}
+.title_review, .star_review, .text_review{
+    color: black;
+}

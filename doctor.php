@@ -4,21 +4,15 @@
      <div class="content_r col-xs-12 col-sm-12 col-md-12 col-lg-12">
        
        <div class="row">
-          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 ">
+          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 ">
+           <a href="/review.php">
+               <p> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"> </span> Write a review</p>
+            </a>
             <a href="#">
               <img class="img-responsive" src="img/504.jpg_frame%20(15).jpg" alt="photo doctor">
             </a>
-          </div>
-          
-          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 ">
-           <!--name doctor-->
-<?php
-   $doc = "NO DOCTOR SELECTED !";
-   if (isset($_GET["doctor"]) && !empty($_GET["doctor"])){
-      $doc = $_GET["doctor"];
-   }
-?>
-            <a href="#"><h4 class=""><? php echo $doc; ?></h4></a>
+            <p class="doctor">Doctor's name:</p>
+            <p class="name_doctor">Ksenia_Ovchinnikova</p>
             <!--Clinic-->
                  <div class="dropdown dr_clinic">
                       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -32,7 +26,19 @@
                         <li><a href="#">Clinic4</a></li>
                       </ul>
                  </div>
-                 <!-- calendar -->
+          </div>
+          
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 ">
+          <p>Info and Boking</p>
+           <!--name doctor-->
+<?php
+   $doc = "NO DOCTOR SELECTED !";
+   if (isset($_GET["doctor"]) && !empty($_GET["doctor"])){
+      $doc = $_GET["doctor"];
+   }
+?>
+            <a href="#"><h4 class=""><? php echo $doc; ?></h4></a>
+                             <!-- calendar -->
                  <div class="panel panel-default ">
                       <!-- Default panel contents calendar -->
                       <div class="panel-heading"><span class="glyphicon glyphicon-calendar" aria-hidden="true"> </span> Calendar</div>
@@ -169,7 +175,7 @@
                  </div>
                  <!-- book -->
                  <div class=" bt_s">
-                        <input type="submit" value="BOOK!" form="bookform">
+                        <input type="submit" class="lookgood_1 bt_ss" value="BOOK" form="bookform">
                  </div>  
                  <!-- Service packages -->
                  <div class="panel panel-default ">
@@ -184,17 +190,17 @@
                                 <th><span class="glyphicon glyphicon-euro" aria-hidden="true"></span></th>
                             </tr>
                             <tr>
-                                <td>Package Ã¢ÂÂ1</td>
+                                <td>Package 1</td>
                                 <td>Result table</td>
                                 <td>Result table</td>
                             </tr>
                             <tr>
-                                <td>Package Ã¢ÂÂ2</td>
+                                <td>Package 2</td>
                                 <td>Result table</td>
                                 <td>Result table</td>
                             </tr>
                             <tr>
-                                <td>Package Ã¢ÂÂ3</td>
+                                <td>Package 3</td>
                                 <td>Result table</td>
                                 <td>Result table</td>
                             </tr>

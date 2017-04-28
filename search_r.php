@@ -3,7 +3,7 @@
      <!--content_r-->
  <div class="container">
      <div class="content_r col-xs-12 col-sm-12 col-md-12 col-lg-12">
-             <div class="search_filt  col-xs-12 col-sm-4 col-md-4 col-lg-4">
+             <div class="search_filt  col-xs-12 col-sm-3 col-md-3 col-lg-3">
                  <p class="text-center text_filt"><span class="glyphicon glyphicon-filter" aria-hidden="true"> </span> FILTER YOUR RESULTS</p>
                   <form action="/search_r.php" method="post">
                      <select name="serviceSelect" class="lookgood_1" style="color:black;">
@@ -41,22 +41,22 @@
                      
                      <input name="minprice" type="text" placeholder="min" class="price" >
                      <input name="maxprice" type="text" placeholder="max" class="price" >
-                     <br>
+                     
                      <input type="submit" class="lookgood_1 bt_ss" value="SEARCH">
                   </form>
 
 <!-- DMITRI XXX!!!XXX -->
              </div>
              <br>
-             <div class="search_res  col-xs-12 col-sm-8 col-md-8 col-lg-8">
+             <div class="search_res  col-xs-12 col-sm-9 col-md-9 col-lg-9">
                  <!--Result table-->
                  <!--Result map-->
                  <div class="notebook" id="notebook4">
                  <!-- notebook test container-->
                     <div class="tabs">
-                       <div style="width:50%;margin:0 auto;color:red;margin-top: 1px;">
-                          <li onclick="switcToResults()" class="tab_1">RESULTS</li>
-                          <li onclick="switcToMap()" class="tab_1">SHOW ON MAP</li>
+                       <div style="margin:0 auto;color:red;margin-top: 1px;">
+                          <li onclick="switcToResults()" class="tab_1 col-xs-6">LIST</li>
+                          <li onclick="switcToMap()" class="tab_1 col-xs-6">MAP</li>
                        </div>
                     </div>  
                     <div class="pages"id="page1">
