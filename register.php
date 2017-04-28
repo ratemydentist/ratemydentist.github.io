@@ -19,7 +19,7 @@
                 <input type="text" name="familyname_input" style="width:100%;" placeholder="your familyname"><br><br>
                 <input type="text" name="idcode_input" style="width:100%;" placeholder="your id code"><br><br>
                 <input type="text" name="phonenumber_input" style="width:100%;" placeholder="(+372)your phone number"><br><br>
-                <input type="submit" name="login" style="width:100%;" value="REGISTER">
+                <input type="submit" name="login" value="REGISTER" class="lookgood_1 bt_ss">
              </form>
           </div>
        </div>

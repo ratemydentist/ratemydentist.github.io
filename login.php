@@ -13,7 +13,7 @@
           <div id="main_login" style="color:black;margin:0 auto;width:50%;">
              <input type="text" id="username_input" placeholder="Login" style="width:100%;text-align:center;"><br><br>
              <input type="text" id="password_input" placeholder="Password" style="width:100%;text-align:center;"><br><br>
-             <input type="button" id="login" value="LOGIN" onclick="myFunction()" style="width:100%;text-align:center;"><br> <!-- JS does the login check-->
+             <input type="button" id="login" value="LOGIN" onclick="myFunction()" class="lookgood_1 bt_ss" ><br> <!-- JS does the login check-->
           </div>
        </div>
        <div class="col-md-4"></div>
