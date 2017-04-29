@@ -208,3 +208,15 @@ a>h4{
 .title_review, .star_review, .text_review{
     color: black;
 }
+.inp_reg{
+    width: 200px;
+    margin: 7px 20%;
+    color:black;
+    padding: 3px 6px;
+    border: 1px solid darkslateblue;
+    border-radius: 3px;
+}
+#main_register, #main_login{
+    text-align: center;
+    margin: 7px auto;
+}
