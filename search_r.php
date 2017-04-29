@@ -3,10 +3,11 @@
      <!--content_r-->
  <div class="container">
      <div class="content_r col-xs-12 col-sm-12 col-md-12 col-lg-12">
-             <div class="search_filt  col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                 <p class="text-center text_filt"><span class="glyphicon glyphicon-filter" aria-hidden="true"> </span> FILTER YOUR RESULTS</p>
-                  <form action="/search_r.php" method="post">
-                     <select name="serviceSelect" class="lookgood_1" style="color:black;">
+             <div class="search_filt  col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center form_search">
+                <div class="row form_search">
+                 <p class="text_filt"><span class="glyphicon glyphicon-filter" aria-hidden="true"> </span> FILTER YOUR RESULTS</p>
+                  <form action="/search_r.php" method="post" class="form_search">                
+                     <select name="serviceSelect" class="lookgood_1 dr_down">
                         <option value="Diagnosis">Diagnosis</option>
                         <option value="Correction_of_occlusion">Correction_of_occlusion</option>
                         <option value="Treatment">Treatment</option>
@@ -19,15 +20,14 @@
                         <option value="Aesthetic_dentistry">Aesthetic_dentistry</option>
                      </select>
                      <br>
-                     <select name="townSelect" class="lookgood_1" style="color:black;" id="townId" onchange="distr()">
+                     <select name="townSelect" class="lookgood_1 dr_down" id="townId" onchange="distr()">
                         <option value="Tallinn">Tallinn</option>
                         <option value="Tartu">Tartu</option>
                         <option value="Narva">Narva</option>
                         <option value="Parnu">Parnu</option>
-                     </select>
-                     
+                     </select>   
                      <div id="subDistr">
-                        <select name="districtSelect" class="lookgood_1" style="color:black;">
+                        <select name="districtSelect" class="lookgood_1 dr_down">
                            <option value="Haabersti">Haabersti</option>
                            <option value="Kesklinn">Kesklinn</option>
                            <option value="Kristiine">Kristiine</option>
@@ -37,14 +37,13 @@
                            <option value="Pirita">Pirita</option>
                            <option value="Pxhja-Tallinn">Pxhja-Tallinn</option>
                         </select>
-                     </div>
-                     
+                     </div>                    
                      <input name="minprice" type="text" placeholder="min" class="price" >
                      <input name="maxprice" type="text" placeholder="max" class="price" >
-                     
-                     <input type="submit" class="lookgood_1 bt_ss" value="SEARCH">
+                     <br>                    
+                     <input type="submit" class="lookgood_1 bt_ss" value="SEARCH">                  
                   </form>
-
+               </div>      
 <!-- DMITRI XXX!!!XXX -->
              </div>
              <br>
@@ -63,12 +62,13 @@
                     <!-- Table -->
                       <li class="page">  
                         <div class="table-responsive">
-                           <table class="table">
+                           <table class="table table-responsive">
                               <tr>
-                                 <th>Doctor<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
-                                 <th>Clinic<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
-                                 <th><span class="glyphicon glyphicon-euro" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
-                                 <th><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
+                                 <th>Doctor <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
+                                 <th>Clinic <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
+                                 <th>City <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
+                                 <th><span class="glyphicon glyphicon-euro" aria-hidden="true"> </span> <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
+                                 <th><span class="glyphicon glyphicon-star" aria-hidden="true"> </span> <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></th>
                               </tr>
 
 <!-- DMITRI XXX!!!XXX-->
@@ -98,7 +98,7 @@ echo "Showing results for:  Town: $inputTown  District: $inputDistrict  Service:
 $result = $conn->query($sql)
         or trigger_error($conn->error);
 while ($row = $result->fetch_assoc()) {
-    echo "<tr><td><a style=\"text-decoration:none;color:cornsilk;\" href=\"".$row['doclink']."\">",$row['doctor'],"</a></td><td><a style=\"text-decoration:none;color:cornsilk;\" href=\"".$row['doclink']."\">",$row['clinic'],"</a></td><td><a style=\"text-decoration:none;color:cornsilk;\" href=\"".$row['doclink']."\">",$row['town'],"</a></td><td><a style=\"text-decoration:none;color:cornsilk;\" href=\"".$row['doclink']."\">",$row[$inputService],"</a></td><td><a style=\"text-decoration:none;color:cornsilk;\" href=\"".$row['doclink']."\">",$row['rating'],"</a></td></tr></div>";
+    echo "<tr><td><a style=\"text-decoration:none;color:#fff0b4;\" href=\"".$row['doclink']."\">",$row['doctor'],"</a></td><td><a style=\"text-decoration:none;color:#fff0b4;\" href=\"".$row['doclink']."\">",$row['clinic'],"</a></td><td><a style=\"text-decoration:none;color:#fff0b4;\" href=\"".$row['doclink']."\">",$row['town'],"</a></td><td><a style=\"text-decoration:none;color:#fff0b4;\" href=\"".$row['doclink']."\">",$row[$inputService],"</a></td><td><a style=\"text-decoration:none;color:#fff0b4;\" href=\"".$row['doclink']."\">",$row['rating'],"</a></td></tr></div>";
 }
 ?>
                            </table>
