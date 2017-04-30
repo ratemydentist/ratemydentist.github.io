@@ -15,16 +15,12 @@
             <p class="name_doctor">Ksenia_Ovchinnikova</p>
             <!--Clinic-->
                  <div class="dropdown dr_clinic">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Clinic
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Clinic1</a></li>
-                        <li><a href="#">Clinic2</a></li>
-                        <li><a href="#">Clinic3</a></li>
-                        <li><a href="#">Clinic4</a></li>
-                      </ul>
+ <!--                  <form action="/book.php" method="post" id="bookform"> 
+                      <select name="serviceSelect" class="btn btn-default dropdown-toggle">
+                         <option name="clinic" value="First_Choice">First Choice</option>
+                         <option name="clinic" value="Dental Beauty">Dental Beauty</option>
+                      </select>
+                   </form> -->
                  </div>
           </div>
           
@@ -44,7 +40,11 @@
                       <div class="panel-heading"><span class="glyphicon glyphicon-calendar" aria-hidden="true"> </span> Calendar</div>
                                                    <!-- Table -->
                       <div class="table-responsive">
-                        <form action="/book.php" method="post" id="bookform"> 
+                        <form action="/book.php" method="post" id="bookform">
+                      <select name="clinic_sel" class="btn btn-default dropdown-toggle">
+                         <option name="clinic" value="First_Choice">First Choice</option>
+                         <option name="clinic" value="Dental Beauty">Dental Beauty</option>
+                      </select> 
                           <table class="table ser_pac">
                             <tr>
                                Fri
