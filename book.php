@@ -19,7 +19,7 @@
 
 ?>
 <div id="main">
-    <form action="./book_processing.php" method="post">
+    <form action="bookmail.php" method="post">
       <div class="row" style="color:black;">
         <div class="col-md-2 "></div>
         <div class="col-md-4 test">
