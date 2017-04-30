@@ -1,11 +1,21 @@
-<?php include("template_part_a.php"); ?>
+<?php include("template_part_a.php");
+   session_start();
+?>
     <!--logo-->
     <div class="container">
        <div class="row">
            <div class="col-xs-4"></div>
         <div class="col-xs-4"><p class="text-center logo_img"><img src="img/dentist.png" alt="photo logo"></p></div>
            <div class="col-xs-4"></div>
-        <div class="col-xs-12"><p class="text-center logo_rmd">Rate my Dentist</p></div>
+        <div class="col-xs-12"><p class="text-center logo_rmd">Rate my Dentist</p>
+<?php
+if(isset($_GET["register"])){
+   if($_GET["register"]=="good"){
+      echo "<p class=\"text-center\">Thank you! We have sent you an email with confirmation.</p>";
+   }
+}
+?>
+        </div>
         </div>
     </div>
     <!--endlogo-->
