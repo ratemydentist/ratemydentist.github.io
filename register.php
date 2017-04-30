@@ -3,15 +3,25 @@
 ?>
     <!--logo-->
     <div class="container">
-        <div class="col-xs-12"><p class="text-center logo_rmd">Register</p></div>
+        <div class="col-xs-12"><p class="text-center logo_rmd">Register</p>
+        <p class="text-center">
+<?php
+if(isset($_GET["register"])){
+   if($_GET["register"]=="notgood"){
+      echo "N.B.! PLEASE FILL ALL FIELDS";
+   }
+}
+?>
+        </p></div>
     </div>
     <!--endlogo-->
+
     <br>
     <div class="row">
        <div class=" col-xs-12 col-md-4"></div>
        <div class="col-xs-12 col-md-4 text-center">
           <div id="main_register ">
-             <form action="./do_register.php" method="post">
+             <form action="regmail.php" method="post">
                <div class="row">
                 <input class="inp_reg " type="text" name="login_input"  placeholder="New login">
                 <input class="inp_reg " type="text" name="password_input"  placeholder="New password">
