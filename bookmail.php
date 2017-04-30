@@ -45,5 +45,5 @@ isset($_POST["phone_input"]) && !empty($_POST["phone_input"])
 
    header("Location: https://ratemydentist.000webhostapp.com?register=done");
    die();
-} else {echo "hmm...";}
+}
 ?>
