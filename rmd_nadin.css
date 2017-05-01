@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 @font-face {
     font-family: Swistblnk Monthoers;
@@ -66,6 +67,7 @@ body{
     color: white;
     border: 2px solid white; 
     border-radius: 8px;
+    margin-bottom: 30px;
 }
 
 .notebook,
@@ -230,4 +232,52 @@ a>h4{
 }
 .glyphicon{
     margin-left: 3px;
+}
+.img_d{
+    border-radius: 10px;   
+    margin: 20px auto;
+    text-align: center;
+    width: 220px;
+    height: auto;
+    border: 1px solid darkslateblue;
+}
+.doctor{
+    background-color: rgba(72, 61, 139, 0.35);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    width: 120px;
+    height: auto;
+}
+.name_doctor{
+    color:#fff0b4;
+    text-shadow: white 0 0 0.35px;
+}
+a>p.ref_doctor{ 
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;
+    text-shadow: darkslateblue 0 0 0.3px;
+}
+a>p.ref_doctor:hover {
+ color: #e3e0f0;
+ text-decoration:underline;
+}
+.h_info>span{
+    background: rgba(72, 61, 139, 0.7);
+    font-size: 16px;
+    padding: 3px;
+}
+.h_info{
+    margin: 15px 0;
+}
+div.panel-heading, .panel-default > .panel-heading{
+    color: darkslateblue;
+    font-size: 16px;
+    background-color: rgba(255, 248, 220, 0.3);
+}
+.h_table{
+    color: darkslateblue;
 }

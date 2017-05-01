@@ -4,13 +4,11 @@
      <div class="content_r col-xs-12 col-sm-12 col-md-12 col-lg-12">
        
        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 ">
+          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center">
            <a href="/review.php">
-               <p> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"> </span> Write a review</p>
+               <p class="ref_doctor"> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"> </span> Write a review</p>
             </a>
-            <a href="#">
-              <img class="img-responsive" src="img/504.jpg_frame%20(15).jpg" alt="photo doctor">
-            </a>
+              <img class="img-responsive img_d text-center" src="img/504.jpg_frame%20(15).jpg" alt="photo doctor">
             <p class="doctor">Doctor's name:</p>
             <p class="name_doctor">Ksenia_Ovchinnikova</p>
             <!--Clinic-->
@@ -25,7 +23,7 @@
           </div>
           
           <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 ">
-          <p>Info and Boking</p>
+          <p class="h_info"><span>Info and Boking</span></p>
            <!--name doctor-->
 <?php
    $doc = "NO DOCTOR SELECTED !";
@@ -46,7 +44,7 @@
                          <option name="clinic" value="Dental Beauty">Dental Beauty</option>
                       </select> 
                           <table class="table ser_pac">
-                            <tr>
+                            <tr class="h_table">
                                Fri
                                 <th><span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span></th>
                                 <th>Mon. May 15</th>
