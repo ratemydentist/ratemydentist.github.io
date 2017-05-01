@@ -19,7 +19,7 @@
               <p class="h_info"><span> Write a review</span></p> 
                  <div class="row">
                          <div class="col-xs-12" >
-                             <input class="col-xs-6 title_review" name="titlereview" type="text" placeholder="Title your review" > 
+                             <input class="col-xs-12 col-md-6 title_review" name="titlereview" type="text" placeholder="Title your review" > 
                          </div>
                          <div class="col-xs-12" >
                              <span class="glyphicon glyphicon-star col-xs-7 col-md-3 star" aria-hidden="true"> Rate your review</span>
