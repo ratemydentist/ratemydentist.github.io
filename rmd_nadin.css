@@ -266,8 +266,8 @@ a>p.ref_doctor:hover {
  text-decoration:underline;
 }
 .h_info>span{
-    background: rgba(72, 61, 139, 0.7);
-    font-size: 16px;
+    background: #3e3188;
+    font-size: 15px;
     padding: 3px;
 }
 .h_info{
@@ -280,4 +280,25 @@ div.panel-heading, .panel-default > .panel-heading{
 }
 .h_table{
     color: darkslateblue;
+}
+.dr_down_star{
+    color: black;
+}
+.star{
+    text-align: center;
+    padding: 3px 0;
+    margin: 7px 0;
+    height: 20px;
+}
+.title_review, .text_review{
+    border-radius: 3px;
+    border: 1px solid darkslateblue;
+    margin: 10px 0;
+    color: black;
+}
+.title_review{
+    height: 20px;
+}
+.text_review{
+    height: 150px;
 }
