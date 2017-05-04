@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Rate my dentist</title>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/rmd.css" rel="stylesheet">
+    <!-- css for sidebar-->
+	<link href="css/sidebar.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<!--page wrapper <div>-->
+  <div id="wrapper">	
+  	<!--Sidebar-->
+			<div id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+				<li><a href="clinicindex.html">Dashboard</a></li>
+				<li><a href="Edit_clinic_profile.html">Edit clinic profile</a></li>
+				<li><a href="Edit_Dentist_list.html">Dentist list</a></li>
+				<li><a href="Appointments.html">Appointments</a></li>
+				<li><a href="View_clinic_reviews.html">View clinic reviews</a></li>
+				</ul>
+			</div>
+    <!--menu-->
+    <!--<div class="container">-->
+	<!-- page-content-wrapper -->
+	<div id="page-content-wrapper">
+      <!-- Static navbar -->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+		  <a href="#" class="btn btn-success" id="menu-toggle">Toggle menu</a>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav col-lg-9 col-md-8 col-sm-8">	
+				<a class="col-xs-12 col-sm-2 col-md-2 col-lg-3" href="index.html">Main page</a>
+              
+            </ul>
+            <ul class="nav navbar-nav navbar-right col-lg-3 col-md-4 col-sm-4">
+              <a class="col-xs-12 col-sm-3 col-md-3 col-lg-3" href="index.html">Log out</a>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+  <!--  </div> <!--/.container -->
+  <!--end menu-->
+   
+   	<!--page content-->
+        <nav clas="navbar navbar-default"><!--Calendar navbar-->
+                <div class="row">
+                        <div class="col-lg-2">
+                                <span class="calendarword">Calendar</span>
+                        </div>
+                        <div class="col-lg-2">
+                                <button class="btn btn-default">Today</button>
+                                        <div class="btn-group" role="group" aria-label="...">
+                                          <button type="button" class="btn btn-default"><</button>
+                                          <button type="button" class="btn btn-default">></button>
+                                        </div>
+                        </div>
+                        <div class="col-lg-2">
+                                        <p class="navbar-text navbar-left">Sep 1 - 8, 2015</p>
+                        </div>
+                        <div class="col-lg-6">
+                                <div class="btn-group" role="group" aria-label="...">
+                                        <button type="button" class="btn btn-default">Day</button>
+                                        <button type="button" class="btn btn-default">Week</button>
+                                        <button type="button" class="btn btn-default">Month</button>
+                                        <button type="button" class="btn btn-default">4 Weeks</button>
+                                        <button type="button" class="btn btn-default">Agenda</button>
+                                </div>
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                        More
+                                        <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                        </ul>
+                                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-cog"</span></button>
+                        </div>
+                </div><!--Calendar bar-->    
+					
+				  </nav>
+ 
+        <div class="content">
+                <div class="left-content">
+                        <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8">
+                                        <div class="btn-group">
+                                          <button class="btn btn-danger">Create</button>
+                                          <button class="btn btn-danger btn dropdown-toggle" id="menu1" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="menu1">
+                                            <li><a href="#">One</a></li>
+                                            <li><a href="#">Two</a></li>
+                                            <li><a href="#">Three</a></li>
+                                          </ul>
+                                        </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                        </div><!--End Row-->
+                <div class="row">
+                        <div class="col-sm-10">
+                                <h5>April 2017</h5>
+                        </div>
+                </div>
+				<!--MINI CALENDAR-->
+                <div class="row"> <!--Calender-->
+                        <div class="col-md-1 table-bordered">
+                                <div class="row">
+                                        <div class="col-md-1 table-bordered">S</div>   
+                                        <div class="col-md-1 table-bordered grey">25</div>
+                                        <div class="col-md-1 table-bordered">1</div>
+                                        <div class="col-md-1 table-bordered">8</div>
+                                        <div class="col-md-1 table-bordered">15</div>
+                                        <div class="col-md-1 table-bordered">22</div>
+                                        <div class="col-md-1 table-bordered">29</div>
+                                </div>
+                        </div>
+                        <div class="col-md-1 table-bordered">
+                                <div class="row">
+                                        <div class="col-md-1 table-bordered">M</div>
+                                        <div class="col-md-1 table-bordered grey">26</div>
+                                        <div class="col-md-1 table-bordered">2</div>
+                                        <div class="col-md-1 table-bordered">9</div>
+                                        <div class="col-md-1 table-bordered">16</div>
+                                        <div class="col-md-1 table-bordered">23</div>
+                                        <div class="col-md-1 table-bordered">30</div>
+                                </div>
+                        </div>
+                        <div class="col-md-1 table-bordered">
+                                <div class="row">
+                                        <div class="col-md-1 table-bordered">T</div>
+                                        <div class="col-md-1 table-bordered grey">27</div>
+                                        <div class="col-md-1 table-bordered">3</div>
+                                        <div class="col-md-1 table-bordered">10</div>
+                                        <div class="col-md-1 table-bordered">17</div>
+                                        <div class="col-md-1 table-bordered">24</div>
+                                        <div class="col-md-1 table-bordered grey">1</div>
+                                </div>
+                        </div>
+                        <div class="col-md-1 table-bordered">
+                                <div class="row">
+                                        <div class="col-md-1 table-bordered">W</div>
+                                        <div class="col-md-1 table-bordered grey">28</div>
+                                        <div class="col-md-1 table-bordered">4</div>
+                                        <div class="col-md-1 table-bordered">11</div>
+                                        <div class="col-md-1 table-bordered">18</div>
+                                        <div class="col-md-1 table-bordered">25</div>
+                                        <div class="col-md-1 table-bordered grey">2</div>
+                                </div>
+                        </div>
+                        <div class="col-md-1 table-bordered">
+                                <div class="row">
+                                        <div class="col-md-1 table-bordered">TH</div>
+                                        <div class="col-md-1 table-bordered grey">29</div>
+                                        <div class="col-md-1 table-bordered">5</div>
+                                        <div class="col-md-1 table-bordered">12</div>
+                                        <div class="col-md-1 table-bordered">19</div>
+                                        <div class="col-md-1 table-bordered">26</div>
+                                        <div class="col-md-1 table-bordered grey">3</div>
+                                </div>
+                        </div>
+                        <div class="col-md-1 table-bordered">
+                                <div class="row">
+                                        <div class="col-md-1 table-bordered">F</div>
+                                        <div class="col-md-1 table-bordered grey">30</div>
+                                        <div class="col-md-1 table-bordered">6</div>
+                                        <div class="col-md-1 table-bordered">13</div>
+                                        <div class="col-md-1 table-bordered">20</div>
+                                        <div class="col-md-1 table-bordered">27</div>
+                                        <div class="col-md-1 table-bordered grey">4</div>
+                                </div>
+                        </div>
+                        <div class="col-md-1 table-bordered">
+                                <div class="row">
+                                        <div class="col-md-1 table-bordered">S</div>
+                                        <div class="col-md-1 table-bordered grey">31</div>
+                                        <div class="col-md-1 table-bordered">7</div>
+                                        <div class="col-md-1 table-bordered">14</div>
+                                        <div class="col-md-1 table-bordered">21</div>
+                                        <div class="col-md-1 table-bordered">28</div>
+                                        <div class="col-md-1 table-bordered grey">5</div>
+                                </div>
+                        </div>
+                </div>
+ 
+<!--END MINI CALNDER-->
+  <div class="row">
+                        <div class="col-sm-10">
+                                <h5>Clinics calendars</h5>
+                                <h6 class="h6pad"><a href="#">Dentist 1</a></h6>
+                                <h6 class="h6pad"><a href="#">dentist 2</a></h6>
+                                <h6 class="h6pad"><a href="#">dentist 3</a></h6>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-10">
+                                <h5>Other Calendars</h5>
+                                        <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group input-group-sm">
+                                        <input type="text" class="form-control" placeholder="Add new Calendar">
+                                    
+                                        </div>
+                        </div>
+                </div>
+ 
+        </div><!--End left-content-->
+		 <div class="right-content">
+                        <div class="row">
+                                <div class="col-xs-1 table-bordered"><h6>GMT-05</h6></div>
+                                <div class="col-xs-2 table-bordered">Sun 9/8</div>
+                                <div class="col-xs-2 table-bordered">Mon 9/10</div>
+                                <div class="col-xs-2 table-bordered">Tues 9/11</div>
+                                <div class="col-xs-2 table-bordered">Wed 9/12</div>
+                                <div class="col-xs-1 table-bordered">TH 9/13</div>
+                                <div class="col-xs-1 table-bordered">Fri 9/14</div>
+                                <div class="col-xs-1 table-bordered">Sat 9/15</div>
+                        </div>
+                        <div class="row">
+                                <div class="col-lg-1 table-bordered">12am-8am</div>
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>
+                                <div class="col-lg-1 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>            
+                                       
+                        </div><!--End Row-->
+                        <div class="row">
+                                <div class="col-lg-1 table-bordered">9am<br><br></div>
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>
+                                <div class="col-lg-1 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>            
+                        </div><!--End Row-->
+                        <div class="row">
+                                <div class="col-lg-1 table-bordered">10am<br><br></div>
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>
+                                <div class="col-lg-1 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>                            
+                        </div><!--End Row-->
+                        <div class="row">
+                                <div class="col-lg-1 table-bordered">11am<br><br></div>
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>
+                                <div class="col-lg-1 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>                            
+                        </div><!--End Row-->
+                        <div class="row">
+                                <div class="col-lg-1 table-bordered">12pm<br><br></div>
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>
+                                <div class="col-lg-1 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>                            
+                        </div><!--End Row-->
+                        <div class="row">
+                                <div class="col-lg-1 table-bordered">1pm<br><br></div>
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>
+                                <div class="col-lg-1 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>                                    
+                        </div><!--End Row-->
+                        <div class="row">
+                                <div class="col-lg-1 table-bordered">2pm<br><br></div>
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>
+                                <div class="col-lg-1 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>                                    
+                        </div><!--End Row-->
+                        <div class="row">
+                                <div class="col-lg-1 table-bordered">3pm<br><br></div>
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>
+                                <div class="col-lg-1 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>                            
+                        </div><!--End Row-->
+                        <div class="row">
+                                <div class="col-lg-1 table-bordered">4pm<br><br></div>
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>
+                                <div class="col-lg-1 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>                                    
+                        </div><!--End Row-->
+                        <div class="row">
+                                <div class="col-lg-1 table-bordered">5pm-12am</div>
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-2 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>
+                                <div class="col-lg-1 table-bordered"><br><br></div>    
+                                <div class="col-lg-1 table-bordered"><br><br></div>                            
+                        </div><!--End Row-->
+                </div><!--end right-content-->
+        </div><!--End Content-->
+     
+  <!--footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><p class="text-center">
+        Metro plaza 2. floor. Viru square 2. Tallinn +372 5642969 Monday- Sunday 8:00 - 21:00
+        e-mail info@ratemydentist.ee 
+        <br>Copyright Rate My Dentist 2016 Privacy Policy</p>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+</div>
+   <!-- end page-content-wrapper -->
+   </div>
+   <!--wrapper end-->
+   <!--Menu toggle script-->
+   <script>
+		$("#menu-toggle").click( function (e){
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+   </script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <scipt src="js/bootstrap.js"></scipt>
+		 <script src="js/respond.js"></script>
+                <!--JQUERY-->
+                <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+                <!--AJAX-->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <!--Bootstrap-->
+                <!-- Latest compiled and minified CSS -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+                <!-- Optional theme -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+                <!-- Latest compiled and minified JavaScript -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<!-- code for calendar from https://www.youtube.com/watch?v=y6PkEGnN0VM -->
+  </body>
+  
+</html>
