@@ -4,10 +4,10 @@
 
 ?>
 <?php
-      $day = "unspecified";
-      $month = "unspecified";
-      $hour = "unspecified";
-      $minute = "unspecified";
+      $day = "notset";
+      $month = "notset";
+      $hour = "notset";
+      $minute = "notset";
    if (isset($_POST["datetime"]) && !empty($_POST["datetime"])){
       $when = $_POST["datetime"];
       $day = substr($when,0,2);
