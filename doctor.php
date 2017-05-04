@@ -10,27 +10,31 @@
             </a>
               <img class="img-responsive img_d text-center" src="img/504.jpg_frame%20(15).jpg" alt="photo doctor">
             <p class="doctor">Doctor's name:</p>
-            <p class="name_doctor">Ksenia_Ovchinnikova</p>
+            <p class="name_doctor">
+<?php
+   $doc = "NO DOCTOR SELECTED !";
+   if (isset($_GET["doctor"]) && !empty($_GET["doctor"])){
+      $doc = $_GET["doctor"];
+   }
+   echo $doc;
+?>
+            </p>
             <!--Clinic-->
+                 <br><p class="doctor">Clinic:</p><br>
                  <div class="dropdown dr_clinic">
- <!--                  <form action="/book.php" method="post" id="bookform"> 
-                      <select name="serviceSelect" class="btn btn-default dropdown-toggle">
+              <!--     <form action="/book.php" method="post" id="bookform">  -->
+                      <select name="clinic_sel" class="btn btn-default dropdown-toggle" form="bookform">
                          <option name="clinic" value="First_Choice">First Choice</option>
                          <option name="clinic" value="Dental Beauty">Dental Beauty</option>
                       </select>
-                   </form> -->
+                      <input type="hidden" name="docname" value="<?php echo $doc; ?>" form="bookform">
+                   <!-- </form> -->
                  </div>
           </div>
           
           <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 ">
           <p class="h_info"><span>Info and Boking</span></p>
            <!--name doctor-->
-<?php
-   $doc = "NO DOCTOR SELECTED !";
-   if (isset($_GET["doctor"]) && !empty($_GET["doctor"])){
-      $doc = $_GET["doctor"];
-   }
-?>
             <a href="#"><h4 class=""><? php echo $doc; ?></h4></a>
                              <!-- calendar -->
                  <div class="panel panel-default ">
@@ -38,13 +42,13 @@
                       <div class="panel-heading"><span class="glyphicon glyphicon-calendar" aria-hidden="true"> </span> Calendar</div>
                                                    <!-- Table -->
                       <div class="table-responsive">
-                        <form action="/book.php" method="post" id="bookform">
-                      <select name="clinic_sel" class="btn btn-default dropdown-toggle">
-                         <option name="clinic" value="First_Choice">First Choice</option>
-                         <option name="clinic" value="Dental Beauty">Dental Beauty</option>
-                      </select> 
+                       <form action="/book.php" method="post" id="bookform">
+     <!--                <select name="clinic_sel" class="btn btn-default dropdown-toggle" form="bookform">
+                             <option name="clinic" value="First_Choice">First Choice</option>
+                             <option name="clinic" value="Dental Beauty">Dental Beauty</option>
+                         </select> -->
                           <table class="table ser_pac">
-                            <tr class="h_table">
+                            <tr>
                                Fri
                                 <th><span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span></th>
                                 <th>Mon. May 15</th>
