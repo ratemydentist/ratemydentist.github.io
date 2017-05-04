@@ -1,0 +1,74 @@
+/* for input fields */
+.form-group {
+	padding-left: 20px;
+	padding-right:20px;
+}
+
+.form-control{
+    border: 1px solid #3D4880;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #7D9C47;
+}
+
+.form-control:focus {
+	border: 1px solid #7D9C47;
+	box-shadow: #7D9C47;
+}
+.input-group-addon {
+	background-color: #FFFFFF;
+	border: 1px solid #3D4880;
+    border-radius: 0px;
+}
+
+.inputGroupContainer {
+	/* width: 300px; */
+	color: #3D4880;
+}
+
+/* for buttons masquerading as dropdown menus and the menus they reveal */
+.btn-default 
+{
+    border: 1px solid #3D4880;
+    border-radius: 0px;
+    color: #7D9C47;
+}
+
+.btn-default:hover {
+	background-color: #FFFFFF;
+    border: 1px solid #3D4880;
+    color: #7D9C47;
+}
+
+.btn-default:focus {
+  background-color: #FFFFFF;
+}
+
+.multiselect-container {
+	width: 300px;
+	background-color: #FFFFFF;
+	border: 1px solid #3D4880;
+    border-top: 0px;
+    border-radius: 0px;
+    color: #3D4880;
+
+}
+
+.dropdown-menu li a {
+	color: #3D4880;
+}
+
+/* Glyphicons */
+.glyphicon {
+	color: #3D4880;
+}
+
+/* for form submission buttons */
+input[type="submit"] {
+	height: 34px;
+	width: 100px;
+	background-color: #7D9C47;
+	border: 1px solid #7D9C47;
+	color: #DEE8BC;
+	text-transform: uppercase;
+}

@@ -1,0 +1,20 @@
+html, body {
+    margin: 0;
+    padding: 0;
+	color: #3D4880;
+}
+
+h2 {
+	font-size: 20pt;
+	text-transform: uppercase;
+	color: #3D4880;
+}
+
+h3 {
+	font-size: 16pt;
+	text-transform: uppercase;
+}
+
+.dashboard-section {
+	height: 300px;
+}
