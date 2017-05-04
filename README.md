@@ -1,1 +1,0 @@
-# ratemydentist.github.io
