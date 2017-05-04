@@ -1,4 +1,5 @@
 <?php include 'header.php';
+echo '<div class="col-xs-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">';
 include 'connect.php';
 
 //create a variable
@@ -17,12 +18,16 @@ $add = mysqli_query($conn, "INSERT INTO Dentists(first_name,last_name,specialty)
 
 	if(mysqli_affected_rows($conn) > 0)
 	{
-		echo "<h3>Thank you!</h3>"
+		echo '<div class="text-center">';
+		echo "<h2>Thank you!</h2>";
+		echo '</div>';
 		echo "<p>Dentist information added.</p>";
 	} 
 	else 
 	{
-		echo "<h3>Error!</h3>"
+		echo '<div class="text-center">';
+		echo "<h2>Error!</h2>";
+		echo '</div>';
 		echo "The dentist profile could NOT be added.";
 		echo mysqli_error ($conn);
 	}

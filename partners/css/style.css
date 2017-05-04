@@ -4,6 +4,16 @@ html, body {
 	color: #3D4880;
 }
 
+a:link, a:visited {
+	color: #7D9C47;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #7D9C47;
+	text-decoration: none;
+}
+
 h2 {
 	font-size: 20pt;
 	text-transform: uppercase;
@@ -11,10 +21,24 @@ h2 {
 }
 
 h3 {
-	font-size: 16pt;
+	font-size: 14pt;
 	text-transform: uppercase;
 }
 
 .dashboard-section {
-	height: 300px;
+	height: 250px;
+	margin-bottom: 10px;
+	border: 1px dashed #3D4880;
+	border-radius: 2px;
+}
+
+.dashboard-section h3 {
+	background-color: #3D4880;
+	color: #FFFFFF;
+	padding: 5px 10px;
+	border-radius: 2px;
+}
+
+.dashboard-section .glyphicon {
+	color: #7D9C47;
 }
