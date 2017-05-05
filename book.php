@@ -23,18 +23,18 @@
       <div class="row" style="color:black;">
         <div class="col-md-2 "></div>
         <div class="col-md-4 test">
-            <input readonly name="time_plan" value="<?php echo "VISIT TIME: ".$hour.":".$minute; ?>"><br>
-            <input readonly name="date_plan" value="<?php echo "DATE: ".$day." ".$month; ?>"><br>
-            <input readonly name="doctor_plan" value="Ksenia Ovchinnikova"><br>
-            <textarea readonly name="address_plan" value="<?php echo "ADDRESS: ".$clinic; ?>"><?php echo "clinic: ".$clinic; ?></textarea><br>
+            <input class="book_field" readonly name="time_plan" value="<?php echo "VISIT TIME: ".$hour.":".$minute; ?>"><br>
+            <input class="book_field" readonly name="date_plan" value="<?php echo "DATE: ".$day." ".$month; ?>"><br>
+            <input class="book_field" readonly name="doctor_plan" value="Ksenia Ovchinnikova"><br>
+            <textarea class="book_field" readonly name="address_plan" value="<?php echo "ADDRESS: ".$clinic; ?>"><?php echo "clinic: ".$clinic; ?></textarea><br>
         </div>
         <div class="col-md-4">
-            <input type="text" name="name_input" style="width:100%;text-align:center;" value="<?php echo $_SESSION["name"]." ".$_SESSION["fname"]; ?>"><br>            
-            <input type="text" name="idcode_input" style="width:100%;text-align:center;" 
+            <input class="book_field" type="text" name="name_input" style="width:100%;text-align:center;" value="<?php echo $_SESSION["name"]." ".$_SESSION["fname"]; ?>"><br>            
+            <input class="book_field" type="text" name="idcode_input" style="width:100%;text-align:center;" 
 value="<?php echo $_SESSION["id"]; ?>"><br>
-            <input type="text" name="email_input" style="width:100%;text-align:center;" value="<?php echo $_SESSION["mail"]; ?>"><br>
-            <input type="text" name="phone_input" style="width:100%;text-align:center;" value="<?php echo $_SESSION["phone"]; ?>"><br>
-            <textarea name="reason_input" rows="5" style="width:100%;text-align:center;" placeholder="<?php echo"REASON FOR VISIT"; ?>"></textarea><br>
+            <input class="book_field" type="text" name="email_input" style="width:100%;text-align:center;" value="<?php echo $_SESSION["mail"]; ?>"><br>
+            <input class="book_field" type="text" name="phone_input" style="width:100%;text-align:center;" value="<?php echo $_SESSION["phone"]; ?>"><br>
+            <textarea class="book_field" name="reason_input" rows="5" style="width:100%;text-align:center;" placeholder="<?php echo"REASON FOR VISIT"; ?>"></textarea><br>
         </div>
         <div class="col-md-2 "></div>
       </div> <!-- end row --> 
@@ -42,7 +42,7 @@ value="<?php echo $_SESSION["id"]; ?>"><br>
       <div class="row">
         <div class="col-md-2 "></div>
         <div class="col-md-10" style="color:black;">
-            <input type="submit" name="book" value="BOOK"><br>
+            <input type="submit" name="book" class="lookgood_1 bt_ss" value="BOOK"><br>
         </div>
       </div> <!-- end row -->  
     </form>

@@ -141,9 +141,7 @@ a>h4{
     color: dimgrey;
 }
 .test{
-  border-style: solid;
-  border-color: red;
-  border-width: 1px;
+  border: 1px solid darkslateblue;
 }
 .lookgood_1{
     padding: 3px 6px;
@@ -290,15 +288,20 @@ div.panel-heading, .panel-default > .panel-heading{
     margin: 7px 0;
     height: 20px;
 }
-.title_review, .text_review{
+.title_review, .text_review, .book_field{
     border-radius: 3px;
     border: 1px solid darkslateblue;
-    margin: 10px 0;
+    margin: 5px 0;
     color: black;
 }
 .title_review{
     height: 30px;
+    margin: 10px 0;
 }
 .text_review{
     height: 150px;
+    margin: 10px 0;
+}
+.book_field{
+    padding: 3px 6px;       
 }
