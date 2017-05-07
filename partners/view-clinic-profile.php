@@ -6,7 +6,7 @@ echo '</div>';
 
 include 'connect.php';
 
-$sql = "SELECT clinic_name, clinic_address, clinic_city, clinic_zipcode, clinic_email, clinic_phone FROM Clinics";
+$sql = "SELECT id, clinic_name, clinic_address, clinic_city, clinic_zipcode, clinic_email, clinic_phone FROM Clinics";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) 
@@ -18,8 +18,8 @@ if ($result->num_rows > 0)
             echo "<br>". $row["clinic_address"];
             echo "<br>". $row["clinic_zipcode"]. " ". $row["clinic_city"];
             echo "<br>". $row["clinic_email"];
-            echo "<br>". $row["clinic_phone"];
-            echo '<br><a href="edit_clinic_profile.php?id='.$row['id'].'">Edit clinic profile</a>';
+            echo "<br>+372 ". $row["clinic_phone"];
+            echo '<br><a href="edit-clinic-profile.php?id=1">Edit clinic profile</a>';
     	}
 	} 
 else 

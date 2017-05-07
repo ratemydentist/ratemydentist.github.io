@@ -1,15 +1,24 @@
 <?php include 'header.php';
-include 'connect.php'; ?>
+include 'connect.php';
+
+$id=$_GET['id'];
+
+$sql="SELECT * FROM Dentists WHERE id='$id'";
+$result=mysqli_query($conn, $sql);
+$row=mysqli_fetch_array($result);
+?>
+
   <div class="col-xs-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-    <form method="post" action="add_dentist_profile.php">
+    <form method="post" action="edit_dentist_profile.php?id='<? echo $row['ID']; ?>'">
     <div class="text-center">
-    <h2>Add dentist profile</h2>
+    <h2>Edit dentist profile</h2>
     </div>
+    <input name="id" type="hidden" id="id" value="<? echo $row['ID']; ?>">
     <div class="form-group">
           <div class="inputGroupContainer">
           <label for="first_name">First name *</label>
         <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input class="form-control" type="text" name="first_name" id="first_name" required>
+        <input class="form-control" type="text" name="first_name" id="first_name" value="<? echo $row['first_name']; ?>" required>
         </div>
       </div>
     </div>
@@ -18,7 +27,7 @@ include 'connect.php'; ?>
         <div class="inputGroupContainer">
         <label for="last_name">Last name *</label>
         <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input type="text" class="form-control" name="last_name" id="last_name" required>
+        <input type="text" class="form-control" name="last_name" id="last_name" value="<? echo $row['last_name']; ?>" required>
         </div>
       </div>
     </div>
