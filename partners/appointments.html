@@ -17,6 +17,7 @@
 <!-- CSS for forms -->
 <link href="css/custom.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/forms.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -57,14 +58,12 @@
                                         </div>
                         </div>
                         <div class="col-lg-2">
-                                        <p class="navbar-text navbar-left">Sep 1 - 8, 2015</p>
+                                        <p class="navbar-text navbar-left">May 1 - 7, 2017</p>
                         </div>
                         <div class="col-lg-6">
                                 <div class="btn-group" role="group" aria-label="...">
-                                        <button type="button" class="btn btn-default">Day</button>
-                                        <button type="button" class="btn btn-default">Week</button>
-                                     
-                                        
+                                       <button id="week">Week</button>
+									   <button id="day">Day</button>
                         </div>
                 </div><!--Calendar bar-->    
 					
@@ -91,7 +90,7 @@
                         </div><!--End Row-->
                 <div class="row">
                         <div class="col-sm-10">
-                                <h5>April 2017</h5>
+                                <h5>May 2017</h5>
                         </div>
                 </div>
 				<!--MINI CALENDAR-->
@@ -198,15 +197,16 @@
  
         </div><!--End left-content-->
 		 <div class="right-content">
+		<div id="Week">
                         <div class="row">
                                 <div class="col-xs-1 table-bordered"><h6>GMT-05</h6></div>
-                                <div class="col-xs-2 table-bordered">Sun 9/8</div>
-                                <div class="col-xs-2 table-bordered">Mon 9/10</div>
-                                <div class="col-xs-2 table-bordered">Tues 9/11</div>
-                                <div class="col-xs-2 table-bordered">Wed 9/12</div>
-                                <div class="col-xs-1 table-bordered">TH 9/13</div>
-                                <div class="col-xs-1 table-bordered">Fri 9/14</div>
-                                <div class="col-xs-1 table-bordered">Sat 9/15</div>
+                                <div class="col-xs-2 table-bordered">Mon 01/05</div>
+                                <div class="col-xs-2 table-bordered">Tues 02/05</div>
+                                <div class="col-xs-2 table-bordered">Wed 03/05</div>
+                                <div class="col-xs-2 table-bordered">Th 04/05</div>
+                                <div class="col-xs-1 table-bordered">Fri 05/05</div>
+                                <div class="col-xs-1 table-bordered">Sat 06/05</div>
+                                <div class="col-xs-1 table-bordered">Sun 07/05</div>
                         </div>
                         <div class="row">
                                 <div class="col-lg-1 table-bordered">12am-8am</div>
@@ -309,9 +309,17 @@
                                 <div class="col-lg-1 table-bordered"><br><br></div>    
                                 <div class="col-lg-1 table-bordered"><br><br></div>                            
                         </div><!--End Row-->
-                </div><!--end right-content-->
+									 
+               </div><!--end week-content-->
+				<div id="Day">
+	 <div class="col-xs-2 table-bordered">Mon 01/05</div>
+	 </div>
         </div><!--End Content-->
+		</div><!--End Content-->
      
+	 <div id="Day">
+	 <div class="col-xs-2 table-bordered">Mon 01/05</div>
+	 </div>
   <!--footer -->
   <footer id="footer">
     <div class="container">
@@ -335,6 +343,18 @@ $(document).ready(function () {
     $('.row-offcanvas').toggleClass('active');
     
   });
+});
+
+$(document).ready(function(){
+	var $Week = $("#Week")
+	var $Day = $("#Day")
+	
+    $("#week").click(function(){
+        $Week.toggle();
+    });
+    $("#day").click(function(){
+        $Day.toggle();
+    });
 });
 </script>
 
