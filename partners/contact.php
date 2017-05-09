@@ -2,7 +2,7 @@
 
   <div class="col-xs-12 col-md-6 col-lg-6">
   <div class="col-xs-12 col-md-12 col-lg-12">
-    <form class="form-horizontal" method="post">
+    <form class="form-horizontal" method="post" action="message-thanks.php">
     <div class="text-center">
     <h3>Contact us</h3>
     </div>
