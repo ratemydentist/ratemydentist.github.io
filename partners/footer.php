@@ -1,15 +1,17 @@
   </div><!-- /.row -->
 </div><!-- /.container -->
 
-<footer id="footer">
-<div class="container">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-    <p>Metro plaza 2. floor. viru square 2. Tallinn +372 5642969 Monday-Sunday 8:00 - 21:00
-    e-mail info@ratemydentist.ee 
- 	    <br>Copyright Rate My Dentist 2016 Privacy Policy</p>
- 	</div>
+<div id="footer">
+<div class="container-fluid">
+<div class="row">
+  <div class="col-xs-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 text-center">
+    <a href="about.php" class="footer-link">About</a> |
+    <a href="contact.php" class="footer-link">Contact</a>
+    <br><span class="small-text">&copy; 2017 Rate My Dentist. All rights reserved.</span>
+  </div>
 </div>
-</footer>
+</div>
+</div>
 
 <script type="text/javascript">
 $(document).ready(function () {
