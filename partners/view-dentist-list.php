@@ -3,6 +3,7 @@ echo '<div class="col-xs-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">'
 echo '<div class="text-center">';
 echo "<h2>Dentist list</h2>";
 echo '</div>';
+echo '<p><a href="add-dentist-profile.php">Add dentist profile</a></p>';
 include 'connect.php';
 
 $sql = "SELECT id, first_name, last_name, specialty FROM Dentists";
@@ -27,5 +28,6 @@ else
 	}
 
 $conn->close();
+
 include 'footer.php';
 ?>
