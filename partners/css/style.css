@@ -43,12 +43,68 @@ h3 {
 	color: #7D9C47;
 }
 
+.dropbtn {
+    background-color: #FFFFFF;
+    color: #7D9C47;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #7D9C47;
+    padding: 2px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #FFFFFF;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #FFFFFF;
+}
+
 #footer {
-    position: fixed; 
-    left: 0; bottom: 0; 
+	position: absolute;
+    left: 0; 
+    bottom: 0; 
     padding: 3px;
-    background-color: #7D9C47; 
+    background-color: #7D9C47;
     color: #DEE8BC; 
     width: 100%; 
     font-size: 10pt;
+}
+
+#footer a {
+	color: #FFFFFF;
+}
+
+#footer a:hover, a:active {
+	color: #FFFFFF;
+}
+
+.small-text {
+	font-size: 8pt;
 }
