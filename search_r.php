@@ -35,7 +35,7 @@
                            <option value="Mustamae">Mustamae</option>
                            <option value="Nomme">Nomme</option>
                            <option value="Pirita">Pirita</option>
-                           <option value="Pxhja-Tallinn">Pxhja-Tallinn</option>
+                           <option value="P&#245;hja-Tallinn">P&#245;hja-Tallinn</option>
                         </select>
                      </div>                    
                      <input name="minprice" type="text" placeholder="min" class="price" >
