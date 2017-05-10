@@ -33,30 +33,36 @@ include 'connect.php'; ?>
   </div>
   <div class="col-xs-12 col-md-3 col-lg-3">
   <div class="col-xs-12 col-md-12 col-lg-12 dashboard-section">
-      <div class="text-center">
-      <h3>Dentists</h3>
-      </div>
-      <p><span class="glyphicon glyphicon-list-alt"></span>&nbsp;<a href="view-dentist-list.php">View dentist list</a>
-      <br><span class="glyphicon glyphicon-plus"></span>&nbsp;<a href="add-dentist-profile.php">Add dentist profile</a></p>
+    <div class="text-center">
+    <h3>Dentists</h3>
+    </div>
+    <p><span class="glyphicon glyphicon-list-alt"></span>&nbsp;<a href="view-dentist-list.php">View dentist list</a>
+    <br><span class="glyphicon glyphicon-plus"></span>&nbsp;<a href="add-dentist-profile.php">Add dentist profile</a></p>
   </div>
   </div>
 
   <div class="col-xs-12 col-md-3 col-lg-3">
   <div class="col-xs-12 col-md-12 col-lg-12 dashboard-section">
-      <div class="text-center">
-      <h3>Appointments</h3>
-      </div>
-      <p><span class="glyphicon glyphicon-list-alt"></span>&nbsp;<a href="appointments.html">View appointments</a></p>
+    <div class="text-center">
+    <h3>Appointments</h3>
+    </div>
+    <p><span class="glyphicon glyphicon-list-alt"></span>&nbsp;<a href="appointments.html">View appointments</a></p>
   </div>
   </div>
   
   <div class="col-xs-12 col-md-3 col-lg-3">
   <div class="col-xs-12 col-md-12 col-lg-12 dashboard-section">
-      <div class="text-center">
-      <h3>Reviews</h3>
-      </div>
-      <p><span class="glyphicon glyphicon-list-alt"></span>&nbsp;<a href="#"><a href="#">View all reviews</a>
-      <br>
+    <div class="text-center">
+    <h3>Reviews</h3>
+    </div>
+    <div class="dropdown">
+    <button class="dropbtn">Select a dentist</button>
+    <div class="dropdown-content">
+      <a href="dan-tist.html">Dan Tist</a>
+      <a href="ott-puusepp.html">Ott Puusepp</a>
+      <a href="niklas-muukkonen.html">Niklas Muukkonen</a>
+    </div>
+    </div>
   </div>
   </div>
  <?php include 'footer.php'; ?>
