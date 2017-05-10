@@ -19,12 +19,12 @@
     
      b. List of contributors and the main parts of the application they will be focusing on.
      User (patient) side of the website
-	- Dmitri Karzikov
-     	- Hüseyin Komaç
-     	- Nadin Puchnina
+	- Dmitri Karzikov (PHP, SQL requests from website and a tiny bit of bootstrap, website architecture)
+     	- Hüseyin Komaç (Javascript and database handling through SQL, website architecture)
+     	- Nadin Puchnina (all Bootstrap - the looks and style, website architecture)
      Partner (clinic) side of the website
-	- Eduard Väli
-	- Manisha Khulbe 
+	- Eduard Väli (looks of the website, website architecture)
+	- Manisha Khulbe (functionality, website architecture)
 	Login screen, dashboard, add/edit clinic profile, add/edit dentist profiles, contact form
 
  
