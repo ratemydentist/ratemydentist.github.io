@@ -9,7 +9,7 @@
      	- by rate level
      	- by price range based on standard service packages
      	- by reviews
-      2. Booking of
+      2. Booking of appointments
       3. Review and rating of dentists by users
       In order to synchronise appointments, and maintain an up-to-date listing of clinics and dentists, RMD partners with clinics and offers to them the following services:
       1. Listing and editing clinic information
