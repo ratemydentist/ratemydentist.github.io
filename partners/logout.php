@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
 <title>Rate My Dentist</title>
 
@@ -9,7 +8,7 @@
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <!-- CSS affecting all pages -->
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<!-- CSS for the navbar-->
+<!-- CSS for the navbar and sidebar-->
 <link rel="stylesheet" type="text/css" href="css/navbar.css" />
 <!-- Include Bootstrap Multiselect CSS and JS -->
 <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
@@ -30,15 +29,9 @@
       <a class="navbar-brand">Rate my Dentist</a>
     </div>
     <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="index.php">Dashboard</a></li>
-        <li><a href="view-clinic-profile.php">Clinic profile</a></li>
-        <li><a href="view-dentist-list.php">Dentist list</a></li>
-        <li><a href="appointments.html">Appointments</a></li>
-        <li><a href="view-reviews.php">Reviews</a></li>
-      </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="logout.php">Log out&nbsp;&nbsp;</a></li>
+        <li><a href="login.php">Log in</a></li>
+        <li><a href="register.php">Register&nbsp;&nbsp;</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -46,3 +39,10 @@
 
 <div class="container">
   <div class="row row-centered">
+  <div class="col-xs-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+  	<div class="text-center">
+    <h2>Logged out</h2>
+    </div>
+    <p>You have now been logged out. Thank you for using Rate My Dentist.</p>
+  </div>
+ <?php include 'footer.php'; ?>

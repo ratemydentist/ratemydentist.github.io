@@ -5,12 +5,12 @@
     <h2>Add dentist profile</h2>
     </div>
     <div class="form-group">
-          <div class="inputGroupContainer">
-          <label for="first_name">First name *</label>
+        <div class="inputGroupContainer">
+        <label for="first_name">First name *</label>
         <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
         <input class="form-control" type="text" name="first_name" id="first_name" required>
         </div>
-      </div>
+        </div>
     </div>
 
     <div class="form-group">
@@ -19,7 +19,7 @@
         <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
         <input type="text" class="form-control" name="last_name" id="last_name" required>
         </div>
-      </div>
+        </div>
     </div>
 
       <!-- Initialize the Multiselect plugin: -->
@@ -43,11 +43,11 @@
             <option value="Oral pathology">Oral pathology</option>
           </select>
           </div>
-        </div>
+            </div>
     </div>
 
     <div class="form-group text-center">
-    <br><input type="submit" value="Submit">
+        <br><input type="submit" value="Submit">
     </div>
     </form>
     </div>

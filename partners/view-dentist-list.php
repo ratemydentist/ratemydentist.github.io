@@ -15,8 +15,9 @@ if ($result->num_rows > 0)
     	// output data of each row
     	while($row = $result->fetch_assoc()) 
     	{
-        	echo $counter. ". " . $row["first_name"]. " " . $row["last_name"]. "<br>" .$row["specialty"];
+            echo $counter. ". " . $row["first_name"]. " " . $row["last_name"]. "<br>" .$row["specialty"];
             echo '&nbsp; <a href="edit-dentist-profile.php?id=' . $row['id'] . '">Edit profile</a><br>';
+            echo '<br>&nbsp;';
             $counter++;
     	}
 	} 

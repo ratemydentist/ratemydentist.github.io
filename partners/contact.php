@@ -60,7 +60,7 @@
     <br>info@ratemydentist.ee</p>
     <hr />
     <div class="hidden-xs">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.7421626567093!2d24.751782115659353!3d59.43737470939734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46929360ff21f69d%3A0x4988cc1efbe275d4!2sMetro+Plaza!5e0!3m2!1sen!2see!4v1494337181551" width="408" height="350" frameborder="0" style="border:0"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.7421626567093!2d24.751782115659353!3d59.43737470939734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46929360ff21f69d%3A0x4988cc1efbe275d4!2sMetro+Plaza!5e0!3m2!1sen!2see!4v1494337181551" width="408" height="345" frameborder="0" style="border:0"></iframe>
     </div>
     </div>
   </div>

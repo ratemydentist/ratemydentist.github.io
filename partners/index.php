@@ -40,14 +40,16 @@ include 'connect.php'; ?>
       <br><span class="glyphicon glyphicon-plus"></span>&nbsp;<a href="add-dentist-profile.php">Add dentist profile</a></p>
   </div>
   </div>
+
   <div class="col-xs-12 col-md-3 col-lg-3">
   <div class="col-xs-12 col-md-12 col-lg-12 dashboard-section">
       <div class="text-center">
       <h3>Appointments</h3>
       </div>
-      
+      <p><span class="glyphicon glyphicon-list-alt"></span>&nbsp;<a href="appointments.html">View appointments</a></p>
   </div>
   </div>
+  
   <div class="col-xs-12 col-md-3 col-lg-3">
   <div class="col-xs-12 col-md-12 col-lg-12 dashboard-section">
       <div class="text-center">
