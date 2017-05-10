@@ -23,9 +23,10 @@
      	- Hüseyin Komaç (Javascript and database handling through SQL, website architecture)
      	- Nadin Puchnina (all Bootstrap - the looks and style, website architecture)
      Partner (clinic) side of the website
-	- Eduard Väli (looks of the website, website architecture)
-	- Manisha Khulbe (functionality, website architecture)
-	Login screen, dashboard, add/edit clinic profile, add/edit dentist profiles, contact form
+	- Eduard Väli (Bootstrap CSS and HTML)
+	Dashboard, appointments calendar, reviews page
+	- Manisha Khulbe (Bootstrap CSS and HTML, PHP and MySQL)
+	Login screen, dashboard, add/edit clinic and dentist profiles, contact form
 
  
      c. Framework used to develop the application.
