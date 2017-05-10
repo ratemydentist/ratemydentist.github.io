@@ -33,7 +33,7 @@
      Bootstrap
      
      d. Target platform that the prototype will run on.
-     In web browsers
+     The prototype will be held on a website.Any platform that has an access to a web-based platform can be online.
      
      e. Guide to installing/running the application.
      - to use "Rate My Dentist" service, users need to have an internet connection and a JavaScript enabled browser.
