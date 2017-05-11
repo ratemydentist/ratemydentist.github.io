@@ -55,14 +55,7 @@ include 'connect.php'; ?>
     <div class="text-center">
     <h3>Reviews</h3>
     </div>
-    <div class="dropdown">
-    <button class="dropbtn">Select a dentist</button>
-    <div class="dropdown-content">
-      <a href="dan-tist.html">Dan Tist</a>
-      <a href="ott-puusepp.html">Ott Puusepp</a>
-      <a href="niklas-muukkonen.html">Niklas Muukkonen</a>
-    </div>
-    </div>
+    <p><span classclass="glyphicon glyphicon-star"></span>&nbsp;<a href="view-reviews.html">View reviews</a></p>
   </div>
   </div>
  <?php include 'footer.php'; ?>
