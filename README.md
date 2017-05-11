@@ -24,7 +24,7 @@
      	- Nadin Puchnina (all Bootstrap - the looks and style, website architecture)
      Partner (clinic) side of the website
 	- Eduard Väli (Bootstrap CSS and HTML)
-	Dashboard, appointments calendar, reviews page
+	appointments calendar, reviews page
 	- Manisha Khulbe (Bootstrap CSS and HTML, PHP and MySQL)
 	Login screen, dashboard, add/edit clinic and dentist profiles, contact form
 
@@ -33,7 +33,7 @@
      Bootstrap
      
      d. Target platform that the prototype will run on.
-     The prototype will be held on a website.Any platform that has an access to a web-based platform can be online.
+     The target platform will be PC but it should run on any platform that has an access to the Internet.
      
      e. Guide to installing/running the application.
      - to use "Rate My Dentist" service, users need to have an internet connection and a JavaScript enabled browser.
