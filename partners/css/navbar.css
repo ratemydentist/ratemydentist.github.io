@@ -9,10 +9,6 @@ body {
   height: 100%;
 }
 
-body {
-  padding-top: 70px;
-}
-
 footer {
   padding: 30px 0;
 }
@@ -21,9 +17,14 @@ footer {
   background-color: #8CB2E9;
 }
 
+@font-face {
+    font-family: customFont;
+    src: url(fonts/Monthoers.otf);
+}
+
 .navbar-blue .navbar-brand{
   color: #FFFFFF;
-  font-family: "Swistblnk Monthoers";
+  font-family: customFont;
   font-size: 20pt;
 }
 
@@ -50,9 +51,5 @@ footer {
   background-color: #FFFFFF;
 }
 
-.navbar-blue .navbar-toggle .icon-bar:hover {
-  background-color: #33ccff;
-  border: 1px solid #FFFFFF;
-  border-radius: 2px;
-}
+
 
