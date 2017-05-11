@@ -19,7 +19,7 @@ footer {
 
 @font-face {
     font-family: customFont;
-    src: url(fonts/Monthoers.otf);
+    src: url(../fonts/Monthoers.otf);
 }
 
 .navbar-blue .navbar-brand{
